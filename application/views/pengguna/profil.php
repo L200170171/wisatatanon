@@ -30,6 +30,9 @@
                   <tr>
                       <td><a href="#wilayah-kerja">Wilayah Kerja</a></td>
                   </tr>
+                  <tr>
+                      <td><a href="#mitra-kerja">Mitra Kerja</a></td>
+                  </tr>
 
               </tbody>
             </table>
@@ -80,6 +83,14 @@
                 <h5 class="text-left font-weight-bold">Wilayah Kerja</h5>  
                 <p class="text-justify">
                 Lembaga Pengembangan Sumber Daya Insani (LPSDI) WIN Solution bergerak pada pendidikan luar sekolah yang cakupannya meliputi <b>peningkatan kualitas SDM, peningkatan ketrampilan masyarakat serta pemberdayaan masyarakat</b>.
+                </p>
+              </div>
+
+              <div id="mitra-kerja" class="pt-5">
+                <h5 class="text-left font-weight-bold">Mitra Kerja</h5>  
+                <p class="text-justify">
+                Menunggu Pak Agus Menunggu Pak Agus Menunggu Pak Agus Menunggu Pak Agus Menunggu Pak Agus
+                Menunggu Pak Agus Menunggu Pak Agus Menunggu Pak AgusMenunggu Pak Agus.
                 </p>
               </div>
           </div>
