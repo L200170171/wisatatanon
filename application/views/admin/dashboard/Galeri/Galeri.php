@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
+            <h1 class="m-0 text-dark">Galeri</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -42,25 +42,37 @@
                 <thead>
                 <tr>
                   <th>No</th>
-                  <th>Nomor</th>
-                  <th>Number</th>
+                  <th>Judul</th>
+                  <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>A</td>
+                        <td>
+                        <a href="#" class="badge badge-primary">Detail</a>
+                        <a href="<?= base_url() ?>admin/galeri/edit" class="badge badge-warning">Edit</a>
+                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>2</td>
+                        <td>B</td>
+                        <td>
+                        <a href="#" class="badge badge-primary">Detail</a>
+                        <a href="<?= base_url() ?>admin/galeri/edit" class="badge badge-warning">Edit</a>
+                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
+                        </td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
+                        <td>3</td>
+                        <td>C</td>
+                        <td>
+                        <a href="#" class="badge badge-primary">Detail</a>
+                        <a href="<?= base_url() ?>admin/galeri/edit" class="badge badge-warning">Edit</a>
+                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
+                        </td>
                     </tr>
                 </tbody>
               </table>

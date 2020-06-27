@@ -5,13 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Text Editors</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Text Editors</li>
-            </ol>
+            <h1>Tambah Galeri</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -33,6 +27,7 @@
                     <label for="exampleFormControlFile1">File</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
                 
               </div>
