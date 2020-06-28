@@ -42,4 +42,22 @@ class User extends CI_Controller{
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
+
+    public function insert(){
+        $this->form_validation->set_rules($this->M_user->rules());
+        if($this->form_validation->run()==false){
+            $data['title']='Tambah Paket';
+            $this->load->view('admin/partial/head',$data);
+            $this->load->view('admin/partial/navbar');
+            $this->load->view('admin/partial/sidebar');
+            $this->load->view('admin/dashboard/user/tambah');
+            $this->load->view('admin/partial/footer');
+            $this->load->view('admin/partial/js.php');
+        }
+        else{
+            $this->M_user->insert();
+            redirect("admin/user");
+        }
+
+    }
 }

@@ -11,26 +11,26 @@
                         'label' => 'Nama',
                         'rules' => "trim"),
         
-                array(  'field' => "un",
+                array(  'field' => "username",
                         'label' => "username",
                         'rules' => "trim"),
         
-                array(  'field' => "pw",
+                array(  'field' => "password",
                         'label' => "password",
-                        'rules' => "trim|matches[rpw]|min_length[8]"),
+                        'rules' => "trim|matches[repassword]|min_length[8]"),
         
-                array(  'field' => "rpw",
+                array(  'field' => "repassword",
                         'label' => "re-password",
-                        'rules' => "trim|matches[pw]")
+                        'rules' => "trim|matches[password]")
             );
         }
 
         public function insert(){
-            $password = $this->input->post("pw", true);
+            $password = $this->input->post("password", true);
             $data = [
                 "Nama" => $this->input->post("nama",true),
-                "Username" => $this->input->post("un",true),
-                "Password" => password_hash($password, PASSWORD_BCRYPT)
+                "Username" => $this->input->post("username",true),
+                "Password" => password_hash($password, PASSWORD_DEFAULT)
             ];
             $this->db->insert('user',$data);
         }
