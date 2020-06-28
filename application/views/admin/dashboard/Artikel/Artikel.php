@@ -54,13 +54,11 @@
                     $author=$i['author'];
                 ?>
                     <tr>
-<<<<<<< HEAD
                         <td><?= $no ?></td>
                         <td><?= $judul ?></td>
                         <td><?= date_format($tanggal, 'jS F Y') ?></td>
                         <td><?= $author ?></td>
                         <td class="text-center">
-=======
                         <td>1</td>
                         <td>A</td>
                         <td>
@@ -82,7 +80,6 @@
                         <td>3</td>
                         <td>C</td>
                         <td>
->>>>>>> 68a964a302a738fc275d9bf4663821fcc7fb9b8a
                         <a href="#" class="badge badge-primary">Detail</a>
                         <a href="<?= base_url() ?>admin/artikel/edit" class="badge badge-warning">Edit</a>
                         <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
