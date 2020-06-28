@@ -21,99 +21,87 @@
       <section id="photostack-1" class="photostack photostack-start tanon " style="width: 100%;">
         <div>
           <figure>
-            <a href="http://goo.gl/Qw3ND4" class="photostack-img"><img src="<?=base_url('') ?>assets/img/1.jpg" alt="img01"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/anyaman-Mendong.jpg" alt="img01"/></a>
             <figcaption>
-              <h2 class="photostack-title">Serenity Beach</h2>
+              <h2 class="photostack-title">anyaman Mendong</h2>
             </figcaption>
           </figure>
           <figure>
-            <a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="<?=base_url('') ?>assets/img/2.jpg" alt="img02"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/lereng-telomoyo.jpg" alt="img02"/></a>
             <figcaption>
-              <h2 class="photostack-title">Happy Days</h2>
+              <h2 class="photostack-title">Lereng Telomoyo</h2>
             </figcaption>
           </figure>
           <figure>
-            <a href="http://goo.gl/Jmvr4u" class="photostack-img"><img src="<?=base_url('') ?>assets/img/3.jpg" alt="img03"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/Dolanan-Serok-Mancung.jpg" alt="img03"/></a>
             <figcaption>
-              <h2 class="photostack-title">Beautywood</h2>
+              <h2 class="photostack-title">Serok Mancung</h2>
             </figcaption>
           </figure>
           <figure>
-            <a href="http://goo.gl/49lN3k" class="photostack-img"><img src="<?=base_url('') ?>assets/img/4.jpg" alt="img04"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/duta-wisata.jpg" alt="img04"/></a>
             <figcaption>
-              <h2 class="photostack-title">Heaven of time</h2>
+              <h2 class="photostack-title">Duta Wisata</h2>
             </figcaption>
           </figure>
           <figure>
-            <a href="http://goo.gl/NJ1Dhf" class="photostack-img"><img src="<?=base_url('') ?>assets/img/5.jpg" alt="img05"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/grobak-sodor.jpg" alt="img05"/></a>
             <figcaption>
-              <h2 class="photostack-title">Speed Racer</h2>
+              <h2 class="photostack-title">Grobak Sodor</h2>
             </figcaption>
           </figure>
           <figure>
-            <a href="http://goo.gl/Ms7VDl" class="photostack-img"><img src="<?=base_url('') ?>assets/img/6.jpg" alt="img06"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/kuda-debog.jpg" alt="img06"/></a>
             <figcaption>
-              <h2 class="photostack-title">Forever this</h2>
+              <h2 class="photostack-title">Kuda Debog</h2>
             </figcaption>
           </figure>
           <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/7.jpg" alt="img07"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/menabung-kelereng.jpg" alt="img07"/></a>
             <figcaption>
-              <h2 class="photostack-title">Lovely Green</h2>
+              <h2 class="photostack-title">Sambung Kelereng</h2>
             </figcaption>
           </figure>
           <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/8.jpg" alt="img08"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/olahan-waluh.jpg" alt="img08"/></a>
             <figcaption>
-              <h2 class="photostack-title">Wonderful</h2>
+              <h2 class="photostack-title">Olahan Waluh</h2>
             </figcaption>
           </figure>
           <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/9.jpg" alt="img09"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/sabun-susu.jpg" alt="img09"/></a>
             <figcaption>
-              <h2 class="photostack-title">Love Addict</h2>
+              <h2 class="photostack-title">Sabun Susu</h2>
             </figcaption>
           </figure>
           <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/10.jpg" alt="img10"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/topeng-ayu.jpg" alt="img10"/></a>
             <figcaption>
-              <h2 class="photostack-title">Friendship</h2>
+              <h2 class="photostack-title">Topeng Ayu</h2>
             </figcaption>
           </figure>
           <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/11.jpg" alt="img11"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/wisata-pendidikan.jpg" alt="img11"/></a>
             <figcaption>
-              <h2 class="photostack-title">White Nights</h2>
+              <h2 class="photostack-title">Wisata Pendidikan</h2>
             </figcaption>
           </figure>
           <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/12.jpg" alt="img12"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/kades-pokdarwis.jpg" alt="img12"/></a>
             <figcaption>
-              <h2 class="photostack-title">Serendipity</h2>
+              <h2 class="photostack-title">Kades Pokdarwis</h2>
             </figcaption>
           </figure>
           <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/13.jpg" alt="img13"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/outbond.jpg" alt="img13"/></a>
             <figcaption>
-              <h2 class="photostack-title">Pure Soul</h2>
+              <h2 class="photostack-title">Outbound</h2>
             </figcaption>
           </figure>
           <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/14.jpg" alt="img14"/></a>
+            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/polaroid/Permainan-Tangga-Manusia.jpg" alt="img13"/></a>
             <figcaption>
-              <h2 class="photostack-title">Winds of Peace</h2>
-            </figcaption>
-          </figure>
-          <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/15.jpg" alt="img15"/></a>
-            <figcaption>
-              <h2 class="photostack-title">Shades of blue</h2>
-            </figcaption>
-          </figure>
-          <figure data-dummy>
-            <a href="#" class="photostack-img"><img src="<?=base_url('') ?>assets/img/16.jpg" alt="img16"/></a>
-            <figcaption>
-              <h2 class="photostack-title">Lightness</h2>
+              <h2 class="photostack-title">Tangga Manusia</h2>
             </figcaption>
           </figure>
         </div>
