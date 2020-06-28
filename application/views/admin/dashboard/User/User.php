@@ -65,7 +65,7 @@
                     <td><?= $pw; ?></td>
                     <td>
                       <a class="btn btn-warning" data-toggle="modal" data-target="#Edit<?= $id; ?>"><span class="fa fa-pencil-square-o"></span></a>
-                      <a class="btn btn-danger" href="#"><span class="fa fa-trash"></span></a>
+                      <a class="btn btn-danger admin-hapus" href="#"><span class="fa fa-trash "></span></a>
                     </td>
                 </tr>
                   <?php endforeach; ?>

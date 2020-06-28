@@ -26,7 +26,7 @@
           
           <li class="nav-item">
             <a href="<?= base_url()?>admin/" class="nav-link">
-              <i class="nav-icon fa fa-user"></i>
+              <i class="nav-icon fa fa-home"></i>
               <p>
                 Home
               </p>
@@ -52,7 +52,7 @@
 
           <li class="nav-item">
             <a href="<?= base_url()?>admin/artikel" class="nav-link">
-              <i class="nav-icon fa fa-shopping-basket"></i>
+              <i class="nav-icon fas fa-newspaper"></i>
               <p>
                 Artikel
               </p>
