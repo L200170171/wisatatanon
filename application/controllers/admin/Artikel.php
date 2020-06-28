@@ -38,9 +38,19 @@ class Artikel extends CI_Controller{
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
+<<<<<<< HEAD
 
     public function insert(){
         $this->M_artikel->insert();
         redirect('admin/artikel');
+=======
+    public function detail(){
+        $this->load->view('pengguna/templates/header');
+        $this->load->view('pengguna/templates/css'); 
+        // $this->load->view("pengguna/templates/navbar");
+        $this->load->view('admin/dashboard/artikel/detail');
+        $this->load->view('pengguna/templates/js');
+        $this->load->view('pengguna/templates/footer');
+>>>>>>> 68a964a302a738fc275d9bf4663821fcc7fb9b8a
     }
 }

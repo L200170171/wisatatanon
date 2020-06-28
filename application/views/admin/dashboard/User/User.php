@@ -5,13 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
-            </ol>
+            <h1 class="m-0 text-dark">User</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -29,7 +23,7 @@
               <div class="card-tools">
                 <ul class="nav nav-pills ml-auto">
                   <li class="nav-item">
-                    <a href="#">
+                    <a href="<?= base_url() ?>admin/user/tambah">
                       <button type="button" class="btn btn-default btn-sm"><i class="fa fa-plus-square"></i> Tombol</button>
                     </a>
                   </li>
@@ -64,7 +58,7 @@
                     <td><?= $un; ?></td>
                     <td><?= $pw; ?></td>
                     <td>
-                      <a class="btn btn-warning" data-toggle="modal" data-target="#Edit<?= $id; ?>"><span class="fa fa-pencil-square-o"></span></a>
+                      <a href="<?= base_url() ?>admin/user/edit" class="btn btn-warning" ><span class="fa fa-pencil-square-o"></span></a>
                       <a class="btn btn-danger admin-hapus" href="#"><span class="fa fa-trash "></span></a>
                     </td>
                 </tr>
