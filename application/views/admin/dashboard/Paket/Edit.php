@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambah Galeri</h1>
+            <h1>Edit Paket</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -20,11 +20,19 @@
               <div class="mb-3">
                 <form action="">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Judul</label>
+                    <label for="exampleFormControlInput1">Nama Paket</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" >
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlFile1">File</label>
+                    <label for="exampleFormControlFile1">Deskripsi Paket</label>
+                    <textarea class="form-control" id="Textarea" placeholder="Deskripsi Paket" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Harga</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Thumbnail</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>

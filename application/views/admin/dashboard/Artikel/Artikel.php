@@ -24,7 +24,7 @@
                 <ul class="nav nav-pills ml-auto">
                   <li class="nav-item">
                     <a href="<?= base_url() ?>admin/artikel/tambah">
-                      <button type="button" class="btn btn-default btn-sm"><i class="fa fa-plus-square"></i> Tombol</button>
+                      <button type="button" class="btn btn-default btn-sm"><i class="fa fa-plus-square"></i>Tambah</button>
                     </a>
                   </li>
                 </ul>
@@ -46,8 +46,8 @@
                         <td>A</td>
                         <td>
                         <a href="#" class="badge badge-primary">Detail</a>
-                        <a href="#" class="badge badge-warning">Edit</a>
-                        <a href="#" class="badge badge-danger">Delete</a>
+                        <a href="<?= base_url() ?>admin/artikel/edit" class="badge badge-warning">Edit</a>
+                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
                         </td>
                     </tr>
                     <tr>
@@ -55,8 +55,8 @@
                         <td>B</td>
                         <td>
                         <a href="#" class="badge badge-primary">Detail</a>
-                        <a href="#" class="badge badge-warning">Edit</a>
-                        <a href="#" class="badge badge-danger">Delete</a>
+                        <a href="<?= base_url() ?>admin/artikel/edit" class="badge badge-warning">Edit</a>
+                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
                         </td>
                     </tr>
                     <tr>
@@ -64,8 +64,8 @@
                         <td>C</td>
                         <td>
                         <a href="#" class="badge badge-primary">Detail</a>
-                        <a href="#" class="badge badge-warning">Edit</a>
-                        <a href="#" class="badge badge-danger">Delete</a>
+                        <a href="<?= base_url() ?>admin/artikel/edit" class="badge badge-warning">Edit</a>
+                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
                         </td>
                     </tr>
                 </tbody>

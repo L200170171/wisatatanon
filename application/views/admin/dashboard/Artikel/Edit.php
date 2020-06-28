@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Tambah Galeri</h1>
+            <h1>Edit Artikel</h1>
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -20,11 +20,16 @@
               <div class="mb-3">
                 <form action="">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Judul</label>
+                    <label for="exampleFormControlInput1">Judul Artikel</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" >
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlFile1">File</label>
+                <label for="exampleFormControlInput1">Isi Artikel</label>
+                <textarea class="textarea" placeholder="Place some text here" id="exampleFormControlInput1"
+                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Thumbnail</label>
                     <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
