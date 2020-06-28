@@ -130,7 +130,7 @@
 					}
 				}
 				if( beforeStep ) {
-					this.removeEventListener( 'click', open ); 
+					this.removeEventListener( '', open ); 
 					classie.removeClass( self.el, 'photostack-start' );
 					setTransition();
 				}
@@ -144,14 +144,14 @@
 
 		if( beforeStep ) {
 			this._shuffle();
-			this.el.addEventListener( 'click', open );
+			this.el.addEventListener( '', open );
 		}
 		else {
 			open();
 		}
 
 		this.navDots.forEach( function( dot, idx ) {
-			dot.addEventListener( 'click', function() {
+			dot.addEventListener( '', function() {
 				// rotate the photo if clicking on the current dot
 				if( idx === self.current ) {
 					self._rotateItem();

@@ -216,8 +216,8 @@
 
 .js .photostack::before,
 .js .photostack::after {
-	opacity: 0;
-	visibility: hidden;
+	opacity: 1;
+	visibility: visible;
 }
 
 .js .photostack-start::before,

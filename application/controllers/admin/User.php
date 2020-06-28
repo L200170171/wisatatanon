@@ -22,4 +22,24 @@ class User extends CI_Controller{
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
+
+    public function tambah(){
+        $data['title']='Tambah Paket';
+        $this->load->view('admin/partial/head',$data);
+        $this->load->view('admin/partial/navbar');
+        $this->load->view('admin/partial/sidebar');
+        $this->load->view('admin/dashboard/user/tambah');
+        $this->load->view('admin/partial/footer');
+        $this->load->view('admin/partial/js.php');
+    }
+
+    public function edit($id=0){
+        $data['title']='Edit Artikel';
+        $this->load->view('admin/partial/head',$data);
+        $this->load->view('admin/partial/navbar');
+        $this->load->view('admin/partial/sidebar');
+        $this->load->view('admin/dashboard/user/edit');
+        $this->load->view('admin/partial/footer');
+        $this->load->view('admin/partial/js.php');
+    }
 }
