@@ -3,15 +3,15 @@
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
-          <h2>HIGHLIGHT</h2>
-          <p>Kumpulan kegiatan dan paket wisata yang kami miliki</p>
+          <h2>Gallery</h2>
+          <p>Kumpuan kegiatan dan paket wisata yang kami miliki</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-gallery">gallery</li>
+              <li data-filter=".filter-gallery">kegiatan</li>
               <li data-filter=".filter-paket">paket wisata</li>
             </ul>
           </div>

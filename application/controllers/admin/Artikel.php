@@ -29,4 +29,12 @@ class Artikel extends CI_Controller{
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
+    public function detail(){
+        $this->load->view('pengguna/templates/header');
+        $this->load->view('pengguna/templates/css'); 
+        // $this->load->view("pengguna/templates/navbar");
+        $this->load->view('admin/dashboard/artikel/detail');
+        $this->load->view('pengguna/templates/js');
+        $this->load->view('pengguna/templates/footer');
+    }
 }

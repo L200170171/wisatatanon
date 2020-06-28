@@ -54,7 +54,7 @@
                         <td>2</td>
                         <td>B</td>
                         <td>
-                        <a href="#" class="badge badge-primary">Detail</a>
+                        <a href="<?= base_url() ?>admin/artikel/detail" class="badge badge-primary">Detail</a>
                         <a href="<?= base_url() ?>admin/artikel/edit" class="badge badge-warning">Edit</a>
                         <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
                         </td>
