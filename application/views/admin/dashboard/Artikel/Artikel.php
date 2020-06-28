@@ -35,39 +35,36 @@
               <table id="example1" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
-                  <th>No</th>
+                  <th width="30">No</th>
                   <th>Judul</th>
-                  <th>Action</th>
+                  <th>Tanggal Publish</th>
+                  <th>Author</th>
+                  <th class="text-center" width="150">Action</th>
                 </tr>
                 </thead>
                 <tbody>
+                <?php
+                  $no=0;
+                  foreach($data as $i):
+                    $no++;
+                    $id=$i['ID_artikel'];
+                    $judul=$i['judul'];
+                    $gambar=$i['thumbnail'];
+                    $tanggal=date_create($i['tanggal_upload']);
+                    $author=$i['author'];
+                ?>
                     <tr>
-                        <td>1</td>
-                        <td>A</td>
-                        <td>
+                        <td><?= $no ?></td>
+                        <td><?= $judul ?></td>
+                        <td><?= date_format($tanggal, 'jS F Y') ?></td>
+                        <td><?= $author ?></td>
+                        <td class="text-center">
                         <a href="#" class="badge badge-primary">Detail</a>
                         <a href="<?= base_url() ?>admin/artikel/edit" class="badge badge-warning">Edit</a>
                         <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>B</td>
-                        <td>
-                        <a href="#" class="badge badge-primary">Detail</a>
-                        <a href="<?= base_url() ?>admin/artikel/edit" class="badge badge-warning">Edit</a>
-                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>C</td>
-                        <td>
-                        <a href="#" class="badge badge-primary">Detail</a>
-                        <a href="<?= base_url() ?>admin/artikel/edit" class="badge badge-warning">Edit</a>
-                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
-                        </td>
-                    </tr>
+                  <?php endforeach ?>
                 </tbody>
               </table>
             </div>

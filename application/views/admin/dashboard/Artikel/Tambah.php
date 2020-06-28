@@ -18,21 +18,21 @@
           <div class="card card-outline card-info">
             <div class="card-body pad">
               <div class="mb-3">
-                <form action="">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Judul Artikel</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" >
-                </div>
-                <div class="form-group">
-                <label for="exampleFormControlInput1">Isi Artikel</label>
-                <textarea class="textarea" placeholder="Place some text here" id="exampleFormControlInput1"
-                          style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Thumbnail</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <form action="<?= base_url("admin/Artikel/insert")?>" method="post" enctype="multipart/form-data">
+                  <div class="form-group">
+                      <label for="exampleFormControlInput1">Judul Artikel</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" name="judul">
+                  </div>
+                  <div class="form-group">
+                  <label for="exampleFormControlInput1">Isi Artikel</label>
+                  <textarea class="textarea" placeholder="Place some text here" name="isi" id="summernote"
+                            style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlFile1">Thumbnail</label>
+                      <input type="file" name="foto" class="form-control" id="exampleFormControlFile1">
+                  </div>
+                  <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
                 
               </div>

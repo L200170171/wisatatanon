@@ -9,11 +9,10 @@
 
         private function set_upload_options(){   
             $config = array();
-            $config['upload_path'] = './asset/foto/'; #path penyimpanan folder
+            $config['upload_path'] = './assets/images/Galeri'; #path penyimpanan folder
             $config['allowed_types'] = 'jpg|png|jpeg'; #ekstensi yang diizinkan
             $config['encrypt_name'] = TRUE; #pengubahan nama file
             $config['overwrite'] = FALSE;
-            $config['max_size'] = 0;
             $config['width'] = 800;
             $config['height'] = 800;
 
@@ -26,11 +25,11 @@
             $_FILES['userfile']['type']= $_FILES['foto']['type'];
             $_FILES['userfile']['tmp_name']= $_FILES['foto']['tmp_name'];
             $_FILES['userfile']['error']= $_FILES['foto']['error'];
-
+            $this->load->library('upload');
             $this->upload->initialize($this->set_upload_options());
             if(!$this->upload->do_upload())
                 {
-                    $this->upload->display_errors();
+                    var_dump($foto);
                     die;
                 }
             else{
@@ -39,7 +38,7 @@
             $data = [
                 "judul" => $this->input->post("judul",true),
                 "nama_gambar" => $foto,
-                "author" => $this->session->nama
+                #"author" => $this->session->nama
             ];
             $this->db->insert('galeri',$data);
         }
@@ -53,21 +52,21 @@
             }
             else{            
                 $_FILES['userfile']['name']= $_FILES['foto']['name'];
-            $_FILES['userfile']['type']= $_FILES['foto']['type'];
-            $_FILES['userfile']['tmp_name']= $_FILES['foto']['tmp_name'];
-            $_FILES['userfile']['error']= $_FILES['foto']['error'];
-
-            $this->upload->initialize($this->set_upload_options());
-            if(!$this->upload->do_upload())
-                {
-                    $this->upload->display_errors();
-                    die;
-                }
-            else{
-                    $foto = $this->upload->data('file_name');
-                }
+                $_FILES['userfile']['type']= $_FILES['foto']['type'];
+                $_FILES['userfile']['tmp_name']= $_FILES['foto']['tmp_name'];
+                $_FILES['userfile']['error']= $_FILES['foto']['error'];
+                $this->load->library('upload');
+                $this->upload->initialize($this->set_upload_options());
+                if(!$this->upload->do_upload())
+                    {
+                        $this->upload->display_errors();
+                        die;
+                    }
+                else{
+                        $foto = $this->upload->data('file_name');
+                    }
                 $fotoa = $this->input->post('fotoa');
-                unlink('./asset/foto/galeri/'.$fotoa);
+                unlink('./assets/images/galeri/'.$fotoa);
             }
             $data = [
                 "judul" => $this->input->post("judul",true),
@@ -84,10 +83,15 @@
         }
 
         function hapus_foto($id){
-			$query = $this->db->get_where('galeri', array("ID_galeri" => $id));
+			$query = $this->db->get_where('galeri', array("ID_gambar" => $id));
             $results = $query->result_array();
-            unlink('./asset/foto/galeri/'.($results[0]['nama_gambar']));
+            unlink('./assets/images/Galeri/'.($results[0]['nama_gambar']));
         }
-
+        
+        public function get_data($id){
+            $this->db->where('ID_gambar',$id);
+            $query=$this->db->get("galeri");
+            return $query->result_array();
+        }
     }
 ?>

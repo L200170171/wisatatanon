@@ -18,15 +18,16 @@
           <div class="card card-outline card-info">
             <div class="card-body pad">
               <div class="mb-3">
-                <form action="">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Judul</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" >
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">File</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
+                <form action="<?= base_url("admin/galeri/insert")?>" method="post" enctype="multipart/form-data">
+                  <div class="form-group">
+                      <label for="exampleFormControlInput1">Judul</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1" name="judul">
+                  </div>
+                  <img class="img-thumbnail" id="blah" height="200" width="200">
+                  <div class="form-group">
+                      <label for="imgInp">File</label>
+                      <input type="file" class="form-control" id="imgInp" name="foto">
+                  </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
                 
@@ -41,3 +42,22 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+<script src="<?= base_url() ?>assets/admin/plugins/jquery/jquery.min.js"></script>
+<script>
+  function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      $('#blah').attr('src', e.target.result);
+    }
+    
+    reader.readAsDataURL(input.files[0]); // convert to base64 string
+  }
+}
+
+$("#imgInp").change(function() {
+  readURL(this);
+});
+</script>

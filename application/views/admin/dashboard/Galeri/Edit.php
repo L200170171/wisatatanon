@@ -18,16 +18,25 @@
           <div class="card card-outline card-info">
             <div class="card-body pad">
               <div class="mb-3">
-                <form action="">
+                <?php 
+                  foreach($data as $i):
+                    $id = $i['ID_gambar'];
+                    $judul = $i['judul'];
+                    $gambar = $i['nama_gambar'];
+                ?>
+                <form form action="<?= base_url("admin/galeri/update/").$id?>" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="fotoa" value="<?= $gambar ?>">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Judul</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" >
+                    <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $judul ?>" name="judul">
                 </div>
+                <img src="<?= base_url('assets/images/galeri/').$gambar ?>" class="img-thumbnail" id="blah" height="200" width="200">
                 <div class="form-group">
-                    <label for="exampleFormControlFile1">File</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <label for="imgInp">File</label>
+                    <input type="file" class="form-control" id="imgInp" accept="image/*" name="foto">
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
+                <?php endforeach ?>
                 </form>
                 
               </div>
@@ -41,3 +50,21 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+<script src="<?= base_url() ?>assets/admin/plugins/jquery/jquery.min.js"></script>
+<script>
+  function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      $('#blah').attr('src', e.target.result);
+    }
+    
+    reader.readAsDataURL(input.files[0]); // convert to base64 string
+  }
+}
+
+$("#imgInp").change(function() {
+  readURL(this);
+});
+</script>
