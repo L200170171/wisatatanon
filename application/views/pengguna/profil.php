@@ -16,22 +16,22 @@
               </thead>
               <tbody>
                   <tr>
-                      <td><a href="#nama-lembaga">Nama Lembaga</a></td>
+                      <td><a href="#nama-lembaga" class="scrollto">Nama Lembaga</a></td>
                   </tr>
                   <tr>
-                      <td><a href="#kantor">Kantor</a></td>
+                      <td><a href="#kantor" class="scrollto">Kantor</a></td>
                   </tr>
                   <tr>
-                      <td><a href="#tujuan">Tujuan</a></td>
+                      <td><a href="#tujuan" class="scrollto">Tujuan</a></td>
                   </tr>
                   <tr>
-                      <td><a href="#motto">Motto</a></td>
+                      <td><a href="#motto" class="scrollto">Motto</a></td>
                   </tr>
                   <tr>
-                      <td><a href="#wilayah-kerja">Wilayah Kerja</a></td>
+                      <td><a href="#wilayah-kerja" class="scrollto">Wilayah Kerja</a></td>
                   </tr>
                   <tr>
-                      <td><a href="#mitra-kerja">Mitra Kerja</a></td>
+                      <td><a href="#mitra-kerja" class="scrollto">Mitra Kerja</a></td>
                   </tr>
 
               </tbody>
@@ -98,32 +98,7 @@
       </div>
     </section><!-- End Profil Section -->
 
-    <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright">
-            &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
-            <a href="#about" class="scrollto">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+
+    <?php $this->load->view('pengguna/templates/detailfooter'); ?>
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

@@ -30,6 +30,7 @@
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Judul Artikel</label>
                     <input type="text" name="judul" class="form-control" id="exampleFormControlInput1" value="<?= $judul ?>">
+                    <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" >
                 </div>
                 <div class="form-group">
                 <label for="exampleFormControlInput1">Isi Artikel</label>
@@ -40,6 +41,8 @@
                 <div class="form-group">
                     <label for="imgInp">Thumbnail</label>
                     <input type="file" name="foto" class="form-control" id="imgInp">
+                    <label for="exampleFormControlFile1">Thumbnail</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
                 </form>

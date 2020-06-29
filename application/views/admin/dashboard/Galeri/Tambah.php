@@ -21,12 +21,12 @@
                 <form action="<?= base_url("admin/galeri/insert")?>" method="post" enctype="multipart/form-data">
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Judul</label>
-                      <input type="text" class="form-control" id="exampleFormControlInput1" name="judul">
+                      <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" name="judul">
                   </div>
                   <img class="img-thumbnail" id="blah" height="200" width="200">
                   <div class="form-group">
                       <label for="imgInp">File</label>
-                      <input type="file" class="form-control" id="imgInp" name="foto">
+                      <input type="file" class="form-control-file" id="imgInp" name="foto">
                   </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
