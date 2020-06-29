@@ -17,13 +17,13 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="#bentuk-layanan">Bentuk Layanan</a></td>
+                        <td><a href="#bentuk-layanan" class="scrollto">Bentuk Layanan</a></td>
                     </tr>
                     <tr>
-                        <td><a href="#pelatihan">Pelatihan</a></td>
+                        <td><a href="#pelatihan" class="scrollto">Pelatihan</a></td>
                     </tr>
                     <tr>
-                        <td><a href="#paket">Paket Terbaru</a></td>
+                        <td><a href="#paket" class="scrollto">Paket Terbaru</a></td>
                     </tr>
                 </tbody>
             </table>
