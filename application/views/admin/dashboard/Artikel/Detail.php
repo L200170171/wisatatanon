@@ -11,21 +11,23 @@
       <div class="col-lg-10 col-centered">
         <div class="berita text-justify">
           <!-- <h2 class="portfolio-title text-center">Desa Tanon Menggelar Upacara hari jadi yang ke 12</h2> -->
+          <?php
+            foreach($data as $i):
+              $judul = $i['judul'];
+              $isi = $i['isi'];
+              $gambar = $i['thumbnail'];
+              $tanggal = date_create($i['tanggal_upload']);
+
+            ?>
           <div class="containerimg">
-          <img src="<?= base_url() ?>assets/img/logo/logo.png" class="img-fluid pb-5 rounded mx-auto d-block">
-          <div class="content"><h3>Desa Tanon Menggelar Upacara hari jadi yang ke 12</h3></div>
+           <img src="<?= base_url('assets/images/artikel/').$gambar ?>" class="img-fluid pb-5 rounded mx-auto d-block">
+           <div class="content"><h3><?= $judul ?></h3></div>
           </div>
-          <p class="small"><u>Selasa, 01-01-2020</u></p>
+          <p class="small"><u> <?=date_format($tanggal, 'jS F Y')?> </u></p>
           <div class="article fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi nesciunt quae. Accusantium sunt nostrum eum, suscipit est iusto esse dolores a ducimus aliquid tempore commodi, corporis quisquam facere eveniet!
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, sapiente laborum! Rerum molestias cupiditate libero beatae laboriosam perspiciatis doloremque in possimus eaque amet dicta laborum, nulla consequuntur excepturi quia animi!
-            <br><br>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum provident culpa, consequuntur soluta, atque modi repudiandae obcaecati nesciunt esse nostrum impedit ducimus magnam reiciendis quasi corporis consectetur adipisci. Ipsam, numquam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem suscipit alias impedit, quo nemo qui similique, fuga ullam excepturi voluptas esse blanditiis dolorum tempora dicta, eum sapiente! Consequatur, sunt.
-            <br><br>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum deleniti earum corrupti iure asperiores, officiis dolorem praesentium, eius suscipit quidem voluptatem assumenda eaque sit expedita esse unde temporibus dolorum. Non?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed autem reiciendis in ab accusantium sequi sunt ullam voluptatem illo facere, exercitationem dicta. Accusamus ratione nemo tenetur eius neque praesentium.
+              <?= $isi ?>
           </div>
+          <?php endforeach ?>
         </div>
       </div>
 

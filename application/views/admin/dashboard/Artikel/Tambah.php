@@ -28,9 +28,10 @@
                   <textarea class="textarea" placeholder="Place some text here" name="isi" id="summernote"
                             style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                   </div>
+                  <img class="img-thumbnail" id="blah" height="200" width="300">
                   <div class="form-group">
-                      <label for="exampleFormControlFile1">Thumbnail</label>
-                      <input type="file" name="foto" class="form-control" id="exampleFormControlFile1">
+                      <label for="imgInp">Thumbnail</label>
+                      <input type="file" name="foto" class="form-control" id="imgInp">
                   </div>
                   <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
@@ -47,4 +48,21 @@
   </div>
   <!-- /.content-wrapper -->
 
-  
+<script src="<?= base_url() ?>assets/admin/plugins/jquery/jquery.min.js"></script>
+<script>
+  function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      $('#blah').attr('src', e.target.result);
+    }
+    
+    reader.readAsDataURL(input.files[0]); // convert to base64 string
+  }
+}
+
+$("#imgInp").change(function() {
+  readURL(this);
+});
+</script>

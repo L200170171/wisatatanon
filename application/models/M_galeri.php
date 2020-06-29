@@ -38,7 +38,7 @@
             $data = [
                 "judul" => $this->input->post("judul",true),
                 "nama_gambar" => $foto,
-                #"author" => $this->session->nama
+                "author" => $this->session->nama
             ];
             $this->db->insert('galeri',$data);
         }
