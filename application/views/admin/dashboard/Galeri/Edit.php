@@ -28,12 +28,12 @@
                     <input type="hidden" name="fotoa" value="<?= $gambar ?>">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Judul</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $judul ?>" name="judul">
+                    <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" value="<?= $judul ?>" name="judul">
                 </div>
                 <img src="<?= base_url('assets/images/galeri/').$gambar ?>" class="img-thumbnail" id="blah" height="200" width="200">
                 <div class="form-group">
                     <label for="imgInp">File</label>
-                    <input type="file" class="form-control" id="imgInp" accept="image/*" name="foto">
+                    <input type="file" class="form-control-file" id="imgInp" accept="image/*" name="foto">
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
                 <?php endforeach ?>

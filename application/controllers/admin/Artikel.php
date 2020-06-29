@@ -42,6 +42,7 @@ class Artikel extends CI_Controller{
     public function insert(){
         $this->M_artikel->insert();
         redirect('admin/artikel');
+    }
         
     public function detail(){
         $this->load->view('pengguna/templates/header');

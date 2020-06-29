@@ -21,7 +21,7 @@
                 <form action="">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Judul Artikel</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" >
+                    <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" >
                 </div>
                 <div class="form-group">
                 <label for="exampleFormControlInput1">Isi Artikel</label>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Thumbnail</label>
-                    <input type="file" class="form-control" id="exampleFormControlFile1">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
                 </form>

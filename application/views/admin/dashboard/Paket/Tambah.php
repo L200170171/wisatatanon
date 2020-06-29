@@ -21,15 +21,15 @@
                 <form action="">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Nama Paket</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" >
+                    <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" >
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Deskripsi Paket</label>
-                    <textarea class="form-control" id="Textarea" placeholder="Deskripsi Paket" required></textarea>
+                    <textarea class="form-control col-lg-4 col-md-6 col-sm-6" id="Textarea" placeholder="Deskripsi Paket" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Harga</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" >
+                    <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" >
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Thumbnail</label>
