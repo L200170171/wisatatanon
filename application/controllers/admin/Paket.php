@@ -20,12 +20,13 @@ class Paket extends CI_Controller{
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
-    public function edit($id=0){
+    public function edit($id){
         $data['title']='Tambah Paket';
+        $data['data'] = $this->M_paket->get_data($id);
         $this->load->view('admin/partial/head',$data);
         $this->load->view('admin/partial/navbar');
         $this->load->view('admin/partial/sidebar');
-        $this->load->view('admin/dashboard/paket/edit');
+        $this->load->view('admin/dashboard/paket/edit',$data);
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }

@@ -21,7 +21,7 @@
                 <form action="<?= base_url("admin/Artikel/insert")?>" method="post" enctype="multipart/form-data">
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Judul Artikel</label>
-                      <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" name="judul">
+                      <input type="text" class="form-control col-lg-5" id="exampleFormControlInput1" name="judul">
                   </div>
                   <div class="form-group">
                   <label for="exampleFormControlInput1">Isi Artikel</label>
@@ -31,7 +31,7 @@
                   <img class="img-thumbnail" id="blah" height="200" width="300">
                   <div class="form-group">
                       <label for="imgInp">Thumbnail</label>
-                      <input type="file" name="foto" class="form-control" id="imgInp">
+                      <input type="file" name="foto" class="form-control col-lg-5" id="imgInp">
                   </div>
                   <button class="btn btn-primary" type="submit">Submit</button>
                 </form>

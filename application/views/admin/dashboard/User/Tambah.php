@@ -20,26 +20,26 @@
               <div class="mb-3">
                 <form action="<?= base_url("admin/user/insert")?>" method="POST" enctype="multipart/form-data">
                   <div class="row">
-                    <div class="form-group col-md-6 col-sm-12" >
+                    <div class="form-group col-md-6" >
                       <label for="exampleFormControlInput1">Nama User</label>
-                      <input type="text" class="form-control col-md-10 col-sm-12" name="nama" id="exampleFormControlInput1" placeholder="nama user" value="<?= set_value('nama');?>" required>
+                      <input type="text" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="nama user" value="<?= set_value('nama');?>" required>
                       <?= form_error('nama','<small class="text-danger pl-3">','</small>');?>
                     </div>
-                    <div class="form-group col-md-6 col-sm-12" >
+                    <div class="form-group col-md-6" >
                         <label for="exampleFormControlInput1">Password</label>
-                        <input type="password" class="form-control col-md-10 col-sm-12" name="password" id="exampleFormControlInput1" placeholder="password" required>
+                        <input type="password" class="form-control" name="password" id="exampleFormControlInput1" placeholder="password" required>
                         <?= form_error('password','<small class="text-danger pl-3">','</small>');?>
                     </div>
                   </div>
                 <div class="row">
-                  <div class="form-group col-md-6 col-sm-12">
+                  <div class="form-group col-md-6">
                       <label for="exampleFormControlInput1">Username</label>
-                      <input type="text" class="form-control col-md-10 col-sm-12" name="username" id="exampleFormControlInput1" placeholder="username" value="<?= set_value('username');?>" required>
+                      <input type="text" class="form-control" name="username" id="exampleFormControlInput1" placeholder="username" value="<?= set_value('username');?>" required>
                       <?= form_error('username','<small class="text-danger pl-3">','</small>');?>
                   </div>
-                  <div class="form-group col-md-6 col-sm-12">
+                  <div class="form-group col-md-6">
                       <label for="exampleFormControlInput1">Repassword</label>
-                      <input type="password" class="form-control col-md-10 col-sm-12" name="repassword" id="exampleFormControlInput1" placeholder="ulangi password" required>
+                      <input type="password" class="form-control" name="repassword" id="exampleFormControlInput1" placeholder="ulangi password" required>
                       <?= form_error('repassword','<small class="text-danger pl-3">','</small>');?>
                   </div>
                 </div>  

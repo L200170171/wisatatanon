@@ -40,13 +40,15 @@
             $this->db->delete('user');
         }
         
-        public function update(){
+        public function update($id){
+            $password = $this->input->post("password", true);
             $data = [
                 "Nama" => $this->input->post("nama",true),
-                "Username" => $this->input->post("un",true),
-                "Password" => $this->input->post("pw",true),
+                "Username" => $this->input->post("username",true),
+                "Password" => password_hash($password, PASSWORD_DEFAULT)
             ];
-            $this->db->insert('admin',$data);
+            $this->db->where('ID_User',$id);
+            $this->db->update('user',$data);
         }
 
         public function auth(){
@@ -60,6 +62,12 @@
             else{
                 return FALSE;
             }
+        }
+
+        public function get_data($id){
+            $this->db->where('ID_User',$id);
+            $query=$this->db->get("user");
+            return $query->result_array();
         }
     }
 ?>
