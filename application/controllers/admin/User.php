@@ -33,12 +33,13 @@ class User extends CI_Controller{
         $this->load->view('admin/partial/js.php');
     }
 
-    public function edit($id=0){
+    public function edit($id){
         $data['title']='Edit Artikel';
+        $data['data']=$this->M_user->get_data($id);
         $this->load->view('admin/partial/head',$data);
         $this->load->view('admin/partial/navbar');
         $this->load->view('admin/partial/sidebar');
-        $this->load->view('admin/dashboard/user/edit');
+        $this->load->view('admin/dashboard/user/edit',$data);
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
@@ -58,6 +59,27 @@ class User extends CI_Controller{
             $this->M_user->insert();
             redirect("admin/user");
         }
+    }
 
+    public function update($id){
+        $this->form_validation->set_rules($this->M_user->rules());
+        if($this->form_validation->run()==false){
+            $data['title']='Tambah Paket';
+            $data['data']=$this->M_user->get_data($id);
+            $this->load->view('admin/partial/head',$data);
+            $this->load->view('admin/partial/navbar');
+            $this->load->view('admin/partial/sidebar');
+            $this->load->view('admin/dashboard/user/edit',$data);
+            $this->load->view('admin/partial/footer');
+            $this->load->view('admin/partial/js.php');
+        }
+        else{
+            $this->M_user->update($id);
+            redirect("admin/user");
+        }
+    }
+    public function delete($id){
+        $this->M_user->hapus($id);
+        redirect('admin/user');
     }
 }

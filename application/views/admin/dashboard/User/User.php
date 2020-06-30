@@ -58,8 +58,8 @@
                     <td><?= $un; ?></td>
                     <td><?= $pw; ?></td>
                     <td>
-                      <a href="<?= base_url() ?>admin/user/edit" class="btn btn-warning" ><span class="fa fa-pencil-square-o"></span></a>
-                      <a class="btn btn-danger admin-hapus" href="#"><span class="fa fa-trash "></span></a>
+                      <a href="<?= base_url('admin/user/edit/').$id ?>" class="btn btn-warning" ><span class="fa fa-pencil-square-o"></span></a>
+                      <a class="btn btn-danger admin-hapus" href="<?= base_url('admin/user/delete/').$id ?>"><span class="fa fa-trash "></span></a>
                     </td>
                 </tr>
                   <?php endforeach; ?>

@@ -1,15 +1,15 @@
 <?php
 
-    class M_galeri extends CI_model{
-        function t_galeri(){
-            $query=$this->db->get("galeri");
+    class M_paket extends CI_model{
+        function t_paket(){
+            $query=$this->db->get("paket_wisata");
             return $query->result_array();
         }
 
 
         private function set_upload_options(){   
             $config = array();
-            $config['upload_path'] = './assets/images/Galeri'; #path penyimpanan folder
+            $config['upload_path'] = './assets/images/paket'; #path penyimpanan folder
             $config['allowed_types'] = 'jpg|png|jpeg'; #ekstensi yang diizinkan
             $config['encrypt_name'] = TRUE; #pengubahan nama file
             $config['overwrite'] = FALSE;
@@ -34,11 +34,12 @@
                     $foto = $this->upload->data('file_name');
                 }
             $data = [
-                "judul" => $this->input->post("judul",true),
-                "nama_gambar" => $foto,
-                "author" => $this->session->nama
+                "nama" => $this->input->post("nama",true),
+                "keterangan" => $this->input->post("deskripsi",true),
+                "harga" => $this->input->post("harga",true),
+                "gambar" => $foto
             ];
-            $this->db->insert('galeri',$data);
+            $this->db->insert('paket_wisata',$data);
         }
 
         function update($id){
@@ -64,31 +65,32 @@
                         $foto = $this->upload->data('file_name');
                     }
                 $fotoa = $this->input->post('fotoa');
-                unlink('./assets/images/galeri/'.$fotoa);
+                unlink('./assets/images/paket/'.$fotoa);
             }
             $data = [
-                "judul" => $this->input->post("judul",true),
-                "nama_gambar" => $foto,
-                "author" => $this->session->nama
+                "nama" => $this->input->post("nama",true),
+                "keterangan" => $this->input->post("deskripsi",true),
+                "harga" => $this->input->post("harga",true),
+                "gambar" => $foto
             ];
-            $this->db->where('ID_gambar',$id);
-            $this->db->update('galeri',$data);
+            $this->db->where('ID_paket',$id);
+            $this->db->update('paket_wisata',$data);
         }
 
         function hapus($id){
-            $this->db->where('ID_gambar',$id);
-            $this->db->delete('galeri');
+            $this->db->where('ID_paket',$id);
+            $this->db->delete('paket_wisata');
         }
 
         function hapus_foto($id){
-			$query = $this->db->get_where('galeri', array("ID_gambar" => $id));
+			$query = $this->db->get_where('paket_wisata', array("ID_paket" => $id));
             $results = $query->result_array();
-            unlink('./assets/images/Galeri/'.($results[0]['nama_gambar']));
+            unlink('./assets/images/Paket/'.($results[0]['gambar']));
         }
         
         public function get_data($id){
-            $this->db->where('ID_gambar',$id);
-            $query=$this->db->get("galeri");
+            $this->db->where('ID_paket',$id);
+            $query=$this->db->get("paket_wisata");
             return $query->result_array();
         }
     }

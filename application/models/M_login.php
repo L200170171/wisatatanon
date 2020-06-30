@@ -16,12 +16,12 @@
                 }
                 else{
                     $this->session->set_flashdata('pesan','<div class="alert alert-warning" role="alert">Invalid username or password!</div>');
-                    echo "error 1";
+                    redirect('admin/login');
                 }
             }
             else{
                 $this->session->set_flashdata('pesan','<div class="alert alert-danger" role="alert">Your account is not registered!</div>');
-                echo "error 1";
+                redirect('admin/login');
             }
         }
     }

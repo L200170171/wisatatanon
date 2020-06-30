@@ -67,8 +67,8 @@
                           <b>Publish :</b> <?= $tanggal ?>
                         </td>
                         <td class="text-center">
-                          <a href="<?= base_url('admin/galeri/edit/').$id?>" class="badge badge-warning">Edit</a>
-                          <a href="<?= base_url('admin/galeri/delete/').$id ?>" class="badge badge-danger tombol-hapus">Delete</a>
+                          <a href="<?= base_url('admin/galeri/edit/').$id?>" class="btn btn-warning" title="edit"><span class="fa  fa-pencil-square-o"></span></a>
+                          <a href="<?= base_url('admin/galeri/delete/').$id ?>" class="badge badge-danger tombol-hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                   <?php endforeach; ?>

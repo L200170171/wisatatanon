@@ -45,27 +45,27 @@
                         <td>1</td>
                         <td>A</td>
                         <td>
-                        <a href="#" class="badge badge-primary">Detail</a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="badge badge-warning">Edit</a>
-                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
+                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
+                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
+                        <a class="btn btn-danger tombol-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>B</td>
                         <td>
-                        <a href="#" class="badge badge-primary">Detail</a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="badge badge-warning">Edit</a>
-                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
+                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
+                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
+                        <a class="btn btn-danger tombol-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>C</td>
                         <td>
-                        <a href="#" class="badge badge-primary">Detail</a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="badge badge-warning">Edit</a>
-                        <a href="#" class="badge badge-danger tombol-hapus">Delete</a>
+                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
+                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa  fa-pencil-square-o"></span></a>
+                        <a class="btn btn-danger tombol-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                 </tbody>

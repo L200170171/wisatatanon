@@ -21,7 +21,7 @@
                 <form action="<?= base_url("admin/galeri/insert")?>" method="post" enctype="multipart/form-data">
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Judul</label>
-                      <input type="text" class="form-control" id="exampleFormControlInput1" name="judul">
+                      <input type="text" class="form-control col-lg-5" id="exampleFormControlInput1" name="judul">
                   </div>
                   <img class="img-thumbnail" id="blah" height="200" width="200">
                   <div class="form-group">

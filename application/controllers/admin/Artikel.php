@@ -30,6 +30,7 @@ class Artikel extends CI_Controller{
     }
 
     public function edit($id){
+        $data['data'] = $this->M_artikel->get_data($id);
         $data['title'] = 'Edit Artikel';
         $this->load->view('admin/partial/head',$data);
         $this->load->view('admin/partial/navbar');
@@ -38,17 +39,37 @@ class Artikel extends CI_Controller{
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
+<<<<<<< HEAD
 
     public function insert(){
         $this->M_artikel->insert();
         redirect('admin/artikel');}
+=======
+>>>>>>> c5af7822d46205aa29b05f8c208f39447c6ffac9
         
-    public function detail(){
+    public function detail($id){
+        $data['data'] = $this->M_artikel->get_data($id);
         $this->load->view('pengguna/templates/header');
         $this->load->view('pengguna/templates/css'); 
         // $this->load->view("pengguna/templates/navbar");
-        $this->load->view('admin/dashboard/artikel/detail');
+        $this->load->view('admin/dashboard/artikel/detail',$data);
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/footer');
+    }
+
+    public function insert(){
+        $this->M_artikel->insert();
+        redirect('admin/artikel');
+    }
+
+    public function update($id){
+        $this->M_artikel->update($id);
+        redirect('admin/artikel');
+    }
+    
+    public function delete($id){
+        $this->M_artikel->hapus_foto($id);
+        $this->M_artikel->hapus($id);
+        redirect('admin/artikel');
     }
 }
