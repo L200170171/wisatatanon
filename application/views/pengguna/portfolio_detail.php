@@ -17,38 +17,39 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+<section id="portfolio-details" class="portfolio-details">
+  <div class="container">
 
-        <div class="row">
-
-          <div class="col-lg-8">
-            <h2 class="portfolio-title">This is an example of portfolio detail</h2>
-            <div class="owl-carousel portfolio-details-carousel">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: Example Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-            </ul>
-
-            <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-            </p>
-          </div>
-
-        </div>
-
+    <div class="row row-centered">
+      <div class="col-1">
       </div>
-    </section><!-- End Portfolio Details Section -->
+
+      <div class="col-lg-10 col-centered">
+        <div class="berita text-justify">
+          <div class="containerimg">
+          <img src="<?= base_url() ?>assets/img/logo/logo.png" class="img-fluid pb-5 rounded mx-auto d-block">
+          <div class="content"><h3>Permainan Gobak Sodor</h3></div>
+          </div>
+          <p class="small"><u>Selasa, 01-01-2020</u></p>
+          <div class="article fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi nesciunt quae. Accusantium sunt nostrum eum, suscipit est iusto esse dolores a ducimus aliquid tempore commodi, corporis quisquam facere eveniet!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, sapiente laborum! Rerum molestias cupiditate libero beatae laboriosam perspiciatis doloremque in possimus eaque amet dicta laborum, nulla consequuntur excepturi quia animi!
+            <br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum provident culpa, consequuntur soluta, atque modi repudiandae obcaecati nesciunt esse nostrum impedit ducimus magnam reiciendis quasi corporis consectetur adipisci. Ipsam, numquam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis autem suscipit alias impedit, quo nemo qui similique, fuga ullam excepturi voluptas esse blanditiis dolorum tempora dicta, eum sapiente! Consequatur, sunt.
+            <br><br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum deleniti earum corrupti iure asperiores, officiis dolorem praesentium, eius suscipit quidem voluptatem assumenda eaque sit expedita esse unde temporibus dolorum. Non?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sed autem reiciendis in ab accusantium sequi sunt ullam voluptatem illo facere, exercitationem dicta. Accusamus ratione nemo tenetur eius neque praesentium.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-1">
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
 

@@ -28,7 +28,7 @@
       <div class="col-lg-10 col-centered">
         <div class="berita text-justify">
           <div class="containerimg">
-          <img src="../assets/img/logo/logo.png" class="img-fluid pb-5 rounded mx-auto d-block">
+          <img src="<?= base_url() ?>assets/img/logo/logo.png" class="img-fluid pb-5 rounded mx-auto d-block">
           <div class="content"><h3>Desa Tanon Menggelar Upacara hari jadi yang ke 12</h3></div>
           </div>
           <p class="small"><u>Selasa, 01-01-2020</u></p>
