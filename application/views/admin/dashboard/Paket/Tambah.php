@@ -22,19 +22,22 @@
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Nama Paket</label>
                       <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" name="nama">
+                      <?= form_error('nama','<small class="text-danger pl-3">','</small>');?>
                   </div>
                   <div class="form-group">
                       <label for="exampleFormControlFile1">Deskripsi Paket</label>
                       <textarea name="deskripsi" class="form-control col-lg-4 col-md-6 col-sm-6" id="Textarea" placeholder="Deskripsi Paket" required></textarea>
+                      <?= form_error('deskripsi','<small class="text-danger pl-3">','</small>');?>
                   </div>
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Harga</label>
                       <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" name="harga">
+                      <?= form_error('harga','<small class="text-danger pl-3">','</small>');?>
                   </div>
                   <img class="img-thumbnail" id="blah" height="200" width="200">
                   <div class="form-group">
                       <label for="imgInp">File</label>
-                      <input type="file" class="form-control" id="imgInp" name="foto">
+                      <input type="file" class="form-control" id="imgInp" name="foto" required>
                   </div>
                   <button class="btn btn-primary" type="submit">Submit</button>
                 </form>

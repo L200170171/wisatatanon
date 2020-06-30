@@ -35,39 +35,35 @@
             <table id="example1" class="table table-bordered table-hover table-striped">
                 <thead>
                 <tr>
-                  <th>No</th>
-                  <th>Judul</th>
-                  <th>Action</th>
+                  <th width="30px">No</th>
+                  <th>Thumbnail</th>
+                  <th>Deskripsi</th>
+                  <th width="100px">Action</th>
                 </tr>
                 </thead>
+                <?php 
+                  foreach($data as $i):
+                    $id = $i['ID_paket'];
+                    $nama = $i['nama_paket'];
+                    $keterangan = $i['ketarangan'];
+                    $harga = $i['harga'];
+                    $gambar = $i['gambar'];                    
+                ?>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>A</td>
+                        <td><?= $id ?></td>
+                        <td><img src="<?=base_url('assets/images/paket/').$gambar;?>" width="300px" hight="200px"></td>
                         <td>
-                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
-                        <a class="btn btn-danger admin-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
+                          Nama &nbsp;&nbsp;: <?= $nama ?>
+                          keterangan : <?= $keterangan ?>
+                          harga &nbsp;&nbsp;: <?= $harga ?>
+                        </td>
+                        <td>
+                          <a href="<?= base_url('admin/paket/edit/').$id ?>" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
+                          <a class="btn btn-danger admin-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>B</td>
-                        <td>
-                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
-                        <a class="btn btn-danger admin-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>C</td>
-                        <td>
-                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa  fa-pencil-square-o"></span></a>
-                        <a class="btn btn-danger admin-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
-                        </td>
-                    </tr>
+                    <?php endforeach ?>
                 </tbody>
               </table>
             </div>

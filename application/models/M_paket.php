@@ -1,7 +1,7 @@
 <?php
 
     class M_paket extends CI_model{
-        function t_paket(){
+        function t_tampil(){
             $query=$this->db->get("paket_wisata");
             return $query->result_array();
         }
@@ -92,6 +92,22 @@
             $this->db->where('ID_paket',$id);
             $query=$this->db->get("paket_wisata");
             return $query->result_array();
+        }
+
+        function rules(){
+            return array(
+                array(  'field' => 'nama',
+                        'label' => 'Nama',
+                        'rules' => "trim"),
+        
+                array(  'field' => "keterangan",
+                        'label' => "keterangan",
+                        'rules' => "trim"),
+        
+                array(  'field' => "harga",
+                        'label' => "harga",
+                        'rules' => "trim|numeric")
+            );
         }
     }
 ?>
