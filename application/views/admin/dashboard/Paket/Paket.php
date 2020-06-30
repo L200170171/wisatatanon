@@ -54,7 +54,6 @@
                         <td><?= $id ?></td>
                         <td><img src="<?=base_url('assets/images/paket/').$gambar;?>" width="300px" hight="200px"></td>
                         <td>
-<<<<<<< HEAD
                           Nama &nbsp;&nbsp;: <?= $nama ?>
                           keterangan : <?= $keterangan ?>
                           harga &nbsp;&nbsp;: <?= $harga ?>
@@ -62,7 +61,6 @@
                         <td>
                           <a href="<?= base_url('admin/paket/edit/').$id ?>" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
                           <a class="btn btn-danger admin-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
-=======
                         <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
                         <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
                         <a class="btn btn-danger tombol-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
@@ -84,7 +82,6 @@
                         <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
                         <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa  fa-pencil-square-o"></span></a>
                         <a class="btn btn-danger tombol-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
->>>>>>> 60a124d3a4e5efd60dd1b3617cdbbeaba63eced2
                         </td>
                     </tr>
                     <?php endforeach ?>
