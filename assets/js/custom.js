@@ -21,25 +21,28 @@ $('.tombol-hapus').on('click',function(e){
 })
 
 $('.admin-hapus').on('click',function(e) {
-  // e.preventDefault();
+  e.preventDefault();
 
   // const linkdelete=$(this).attr('href');
 
   Swal.fire({
-    title: 'Enter your password',
-    input: 'password',
-    inputPlaceholder: 'Enter your password',
+    title: 'Masukan Password',
+    icon: 'warning',
+    html:
+    '<form>'+
+    '<div class="form-group">'+
+      '<div>'+
+        '<input type="password" placeholder="Password" class="form-control" id="inputPassword">'+
+      '</div>'+
+    '</div>'+
+  '</form>',
+    showCloseButton: true,
     showCancelButton: true,
-    confirmButtonText: 'Confirm',
-    cancelButtonColor: '#d33',
-    inputAttributes: {
-      maxlength: 10,
-      autocapitalize: 'off',
-      autocorrect: 'off'
-    }
+    focusConfirm: false,
+    confirmButtonText:
+      'Submit',
+    cancelButtonText:
+      'Cancel'
   })
-  
-  if (password) {
-    Swal.fire(`Entered password: ${password}`)
-  }
 })
+

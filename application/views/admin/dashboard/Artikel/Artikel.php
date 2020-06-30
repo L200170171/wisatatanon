@@ -69,7 +69,7 @@
                         <td>
                         <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
                         <a href="<?= base_url() ?>admin/artikel/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
-                        <a href="#" class="badge badge-danger admin-hapus" title="hapus"><span class="fa fa-trash"></span></a>
+                        <a href="#" class="badge badge-danger tombol-hapus" title="hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                     <tr>
@@ -78,7 +78,7 @@
                         <td>
                         <a href="<?= base_url() ?>admin/artikel/detail" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
                         <a href="<?= base_url() ?>admin/artikel/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
-                        <a href="#" class="badge badge-danger admin-hapus" title="hapus"><span class="fa fa-trash"></span></a>
+                        <a href="#" class="badge badge-danger tombol-hapus" title="hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                     <tr>
@@ -87,7 +87,7 @@
                         <td>
                         <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
                         <a href="<?= base_url() ?>admin/artikel/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
-                        <a href="#" class="badge badge-danger admin-hapus" title="hapus"><span class="fa fa-trash"></span></a>
+                        <a href="#" class="badge badge-danger tombol-hapus" title="hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                   <?php endforeach ?>

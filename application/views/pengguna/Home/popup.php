@@ -7,7 +7,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <img src="assets/img/portfolio/promoPaket.png" alt="" style="margin:0 auto; width:100%;">
+        <img src="<?= base_url() ?>assets/img/portfolio/promoPaket.png" alt="" style="margin:0 auto; width:100%;">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

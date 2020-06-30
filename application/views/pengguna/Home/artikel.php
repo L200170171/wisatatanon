@@ -1,5 +1,5 @@
 <!-- ======= More Services Section ======= -->
-<section id="more-services" class="more-services">
+<section id="artikel" class="more-services">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
           <h2>Berita</h2>
