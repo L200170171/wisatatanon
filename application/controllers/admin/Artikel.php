@@ -39,13 +39,6 @@ class Artikel extends CI_Controller{
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
-<<<<<<< HEAD
-
-    public function insert(){
-        $this->M_artikel->insert();
-        redirect('admin/artikel');}
-=======
->>>>>>> c5af7822d46205aa29b05f8c208f39447c6ffac9
         
     public function detail($id){
         $data['data'] = $this->M_artikel->get_data($id);
