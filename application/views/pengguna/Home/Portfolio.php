@@ -1,5 +1,5 @@
 <!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio">
+<section id="gallery" class="portfolio">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
