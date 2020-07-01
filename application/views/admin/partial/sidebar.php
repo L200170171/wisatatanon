@@ -68,6 +68,15 @@
             </a>
           </li>
 
+          <li class="nav-item">
+            <a href="<?= base_url()?>admin/testimoni" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Testimoni
+              </p>
+            </a>
+          </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

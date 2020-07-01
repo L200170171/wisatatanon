@@ -20,6 +20,7 @@ $('.tombol-hapus').on('click',function(e){
       })
 })
 
+<<<<<<< HEAD
 $('.admin-hapus').on('click',function(e) {
   e.preventDefault();
 
@@ -37,10 +38,22 @@ $('.admin-hapus').on('click',function(e) {
 	});
 })
 
+=======
+// notif
+const flashData = $('.flash-data').data('flashdata');
+>>>>>>> 73d70f9a436b3cb78eb1d4c0612e342e1abd040c
 if (flashData){
     Swal.fire ({
         icon: 'success',
         title:flashData
     }); 
-        
-}
+  }
+// Terima Kasih di Testimoni
+$('.terima-kasih').on('click',function(e){
+Swal.fire({
+  position: 'top-center',
+  icon: 'success',
+  title: 'Terima Kasih atas testimoni yang anda berikan',
+  showConfirmButton: true
+})
+})

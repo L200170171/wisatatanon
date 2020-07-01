@@ -12,3 +12,7 @@
 
 <!-- Template Main JS File -->
 <script src="<?=base_url('') ?>assets/js/main.js"></script>
+<!-- swall -->
+<script src="<?= base_url() ?>assets/sweetalert/sweetalert2.all.min.js"></script>
+<!-- swall custom -->
+<script src="<?= base_url() ?>assets/js/custom.js"></script>
