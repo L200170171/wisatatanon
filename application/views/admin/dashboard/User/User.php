@@ -59,7 +59,7 @@
                     <td><?= $pw; ?></td>
                     <td>
                       <a href="<?= base_url('admin/user/edit/').$id ?>" class="btn btn-warning" ><span class="fa fa-pencil-square-o"></span></a>
-                      <a class="btn btn-danger admin-hapus" href="<?= base_url('admin/user/delete/').$id ?>"><span class="fa fa-trash "></span></a>
+                      <a class="btn btn-danger" data-toggle="modal" data-target="#del<?= $id;?>"><span class="fa fa-trash "></span></a>
                     </td>
                 </tr>
                   <?php endforeach; ?>
@@ -77,4 +77,57 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+<!-- modal hapus -->
 
+
+<?php
+  $no=0;
+  foreach ($data as $i) :
+    $id=$i['ID_User'];
+?>
+  <div class="modal fade" id="del<?= $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Password Confirmation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="form-horizontal" action="<?php echo site_url('admin/user/delete/'),$id ;?>" method="post" enctype="multipart/form-data">
+          <div class="modal-body">
+            <div class="form-group row">
+                <label for="inputUserName" class="col-sm-4 control-label">Password</label>
+                <div class="col-sm-7">
+                  <input type="password" name="password" class="form-control" id="inputUserName" placeholder="Enter Your Password" required>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary btn-flat" id="simpan">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<?php endforeach ?>
+
+<script src="<?= base_url() ?>assets/admin/plugins/jquery/jquery.min.js"></script>
+<script src="<?= base_url() ?>assets/sweetalert/sweetalert2.all.min.js"></script>
+<?php if ($this->session->flashdata('data')=='success'):?>
+<script>
+  alert('hai');
+</script>
+<?php endif; ?>
+<?php if ($this->session->flashdata('data')=='error'): ?>
+<script>
+  $(window).load(function(){
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Something went wrong!',
+    })
+  });
+</script>
+<?php endif; ?>

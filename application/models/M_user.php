@@ -51,23 +51,22 @@
             $this->db->update('user',$data);
         }
 
-        public function auth(){
-            $id = $this->input->post("id",true);
-            $pw = $this->input->post("pw",true);
-            $query = $this->db->get_where('User', array("ID_User" => $id));
-            $results = $query->result_array();
-            if($pw == $results[0]['Password']){
-                return TRUE;
-            }
-            else{
-                return FALSE;
-            }
-        }
-
         public function get_data($id){
             $this->db->where('ID_User',$id);
             $query=$this->db->get("user");
             return $query->result_array();
+        }
+
+        public function confirm($id){
+            $query = $this->db->get_where('user', array("ID_User" => $id));
+            $results = $query->result_array();
+            $pw = $this->input->post('password');
+            if(password_verify($pw,$results[0]['Password'])){
+                return True;
+            }
+            else{
+                return False;
+            }
         }
     }
 ?>

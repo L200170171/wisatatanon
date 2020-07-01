@@ -18,7 +18,7 @@ class User extends CI_Controller{
         $this->load->view('admin/partial/head',$data);
         $this->load->view('admin/partial/navbar');
         $this->load->view('admin/partial/sidebar');
-        $this->load->view('admin/dashboard/user/user');
+        $this->load->view('admin/dashboard/user/user',$data);
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
@@ -78,8 +78,17 @@ class User extends CI_Controller{
             redirect("admin/user");
         }
     }
+    
     public function delete($id){
-        $this->M_user->hapus($id);
-        redirect('admin/user');
+        if($this->M_user->confirm($id))
+        {
+            $this->M_user->hapus($id);
+            $this->session->set_flashdata('data','success');
+            redirect('admin/user',reload);
+        }
+        else{
+            $this->session->set_flashdata('data','error');
+            redirect('admin/user',reload);
+        }
     }
 }
