@@ -15,7 +15,9 @@
     <!-- Main content -->
     <section class="content">
     <div class="row">
-        <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('notif'); ?>"></div>
+        <!-- trigger swal -->
+        <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('notif'); ?>"></div> 
+        <!-- ------- -->
         <div class="col-12">
 
           <div class="card card-primary">
@@ -78,4 +80,16 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+  <script>
+    const flashData = $('.flash-data').data('flashdata');
+
+    if (flashData){
+        Swal.fire ({
+            icon: 'success',
+            title:flashData
+        }); 
+            
+    }
+  </script>
 
