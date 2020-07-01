@@ -22,9 +22,12 @@ $('.tombol-hapus').on('click',function(e){
 
 // notif
 const flashData = $('.flash-data').data('flashdata');
-
-<<<<<<< HEAD
-
+if (flashData){
+    Swal.fire ({
+        icon: 'success',
+        title:flashData
+    }); 
+  }
 // Terima Kasih di Testimoni
 $('.terima-kasih').on('click',function(e){
 Swal.fire({
@@ -34,12 +37,3 @@ Swal.fire({
   showConfirmButton: true
 })
 })
-=======
-if (flashData){
-    Swal.fire ({
-        icon: 'success',
-        title:flashData
-    }); 
-        
-}
->>>>>>> 762ef0ddc9e3ac285bbc7309cc9368dae12e2d33
