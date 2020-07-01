@@ -2,7 +2,7 @@
 <section id="faq" class="faq">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
+        <div class="section-title pt-5" data-aos="fade-up">
           <h2>Tentang Kami</h2>
         </div>
 

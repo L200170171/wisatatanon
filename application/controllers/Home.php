@@ -59,5 +59,14 @@ class Home extends CI_Controller
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/footer');
     }
+
+    public function formtestimoni(){
+        $this->load->view('pengguna/templates/header');
+        $this->load->view('pengguna/templates/css'); 
+        $this->load->view("pengguna/templates/navbar");
+        $this->load->view('pengguna/form_testimoni');
+        $this->load->view('pengguna/templates/js');
+        $this->load->view('pengguna/templates/detailfooter');
+    }
 }
 ?>

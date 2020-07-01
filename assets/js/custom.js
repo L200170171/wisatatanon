@@ -46,3 +46,13 @@ $('.admin-hapus').on('click',function(e) {
   })
 })
 
+
+// Terima Kasih di Testimoni
+$('.terima-kasih').on('click',function(e){
+Swal.fire({
+  position: 'top-center',
+  icon: 'success',
+  title: 'Terima Kasih atas testimoni yang anda berikan',
+  showConfirmButton: true
+})
+})

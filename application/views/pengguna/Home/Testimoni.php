@@ -60,8 +60,9 @@
               </p>
             </div>
           </div>
-
         </div>
-
       </div>
+      <center>
+        <a href="<?= base_url()?>home/formtestimoni" class="btn btn-primary mt-3" role="button">Berikan Testimoni</a>
+      </center>
     </section><!-- End Testimonials Section -->
