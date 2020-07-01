@@ -63,6 +63,7 @@ class User extends CI_Controller{
             $this->load->view('admin/partial/js.php');
         }
         else{
+            $this->session->set_flashdata('data','add');
             $this->M_user->insert();
             redirect("admin/user");
         }
@@ -81,7 +82,7 @@ class User extends CI_Controller{
             $this->load->view('admin/partial/js.php');
         }
         else{
-            $this->session->set_flashdata('data','success');
+            $this->session->set_flashdata('data','update');
             $this->M_user->update($id);
             redirect("admin/user");
         }
