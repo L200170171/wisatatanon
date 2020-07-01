@@ -6,6 +6,7 @@
 <link href="<?=base_url('') ?>assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 <link href="<?=base_url('') ?>assets/vendor/venobox/venobox.css" rel="stylesheet">
 <link href="<?=base_url('') ?>assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="<?=base_url('') ?>assets/css/font.css" rel="stylesheet">
 <link href="<?=base_url('') ?>assets/css/custom.css" rel="stylesheet">
 
 <!-- Template Main CSS File -->

@@ -20,32 +20,10 @@ $('.tombol-hapus').on('click',function(e){
       })
 })
 
-$('.admin-hapus').on('click',function(e) {
-  e.preventDefault();
+// notif
+const flashData = $('.flash-data').data('flashdata');
 
-  // const linkdelete=$(this).attr('href');
-
-  Swal.fire({
-    title: 'Masukan Password',
-    icon: 'warning',
-    html:
-    '<form>'+
-    '<div class="form-group">'+
-      '<div>'+
-        '<input type="password" placeholder="Password" class="form-control" id="inputPassword">'+
-      '</div>'+
-    '</div>'+
-  '</form>',
-    showCloseButton: true,
-    showCancelButton: true,
-    focusConfirm: false,
-    confirmButtonText:
-      'Submit',
-    cancelButtonText:
-      'Cancel'
-  })
-})
-
+<<<<<<< HEAD
 
 // Terima Kasih di Testimoni
 $('.terima-kasih').on('click',function(e){
@@ -56,3 +34,12 @@ Swal.fire({
   showConfirmButton: true
 })
 })
+=======
+if (flashData){
+    Swal.fire ({
+        icon: 'success',
+        title:flashData
+    }); 
+        
+}
+>>>>>>> 762ef0ddc9e3ac285bbc7309cc9368dae12e2d33
