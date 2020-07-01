@@ -21,8 +21,8 @@
     <!-- Main content -->
     <section class="content">
     <div class="row">
+        <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('notif'); ?>"></div>
         <div class="col-12">
-
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Judul Tabel</h3>

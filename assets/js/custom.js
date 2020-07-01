@@ -20,6 +20,7 @@ $('.tombol-hapus').on('click',function(e){
       })
 })
 
+<<<<<<< HEAD
 $('.admin-hapus').on('click',function(e) {
   e.preventDefault();
 
@@ -36,4 +37,15 @@ $('.admin-hapus').on('click',function(e) {
 		}
 	});
 })
+=======
+// notif
+const flashData = $('.flash-data').data('flashdata');
+>>>>>>> 762ef0ddc9e3ac285bbc7309cc9368dae12e2d33
 
+if (flashData){
+    Swal.fire ({
+        icon: 'success',
+        title:flashData
+    }); 
+        
+}

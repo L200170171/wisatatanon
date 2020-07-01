@@ -17,6 +17,10 @@
               <li><a href="<?php echo (base_url('home/klien')); ?>">Klien</a></li>
             </ul>
           </li>
+          <li><a href="<?= base_url("home#gallery")?>">Gallery</a></li>
+          <li><a href="<?= base_url("home#paket")?>">Paket Wisata</a></li>
+          <li><a href="<?= base_url("home#testimoni")?>">Testimony</a></li>
+          <li><a href="<?= base_url("home#artikel")?>">Artikel</a></li>
           <li><a href="<?= base_url("home#contact")?>">Contact</a></li>
           <!-- <li class="drop-down"><a href="">Drop Down</a>
             <ul>

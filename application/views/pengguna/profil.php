@@ -6,7 +6,7 @@
           <h2>Tentang Kami</h2>
         </div>
 
-        <div class="row fixed" data-aos="fade-up" data-aos-delay="100">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-3">
             <table class="table table-hover table-bordered">
               <thead>
