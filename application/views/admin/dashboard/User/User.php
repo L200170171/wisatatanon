@@ -16,7 +16,7 @@
     <section class="content">
     <div class="row">
         <!-- trigger swal -->
-        <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('notif'); ?>"></div> 
+        <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('data'); ?>"></div> 
         <!-- ------- -->
         <div class="col-12">
 
@@ -61,7 +61,7 @@
                     <td><?= $un; ?></td>
                     <td><?= $pw; ?></td>
                     <td>
-                      <a href="<?= base_url('admin/user/edit/').$id ?>" class="btn btn-warning" ><span class="fa fa-pencil-square-o"></span></a>
+                      <a data-toggle="modal" data-target="#edit<?= $id;?>" class="btn btn-warning" ><span class="fa fa-pencil-square-o"></span></a>
                       <a class="btn btn-danger" data-toggle="modal" data-target="#del<?= $id;?>"><span class="fa fa-trash "></span></a>
                     </td>
                 </tr>
@@ -82,8 +82,6 @@
   <!-- /.content-wrapper -->
 <!-- modal hapus -->
 
-<<<<<<< HEAD
-
 <?php
   $no=0;
   foreach ($data as $i) :
@@ -103,7 +101,34 @@
             <div class="form-group row">
                 <label for="inputUserName" class="col-sm-4 control-label">Password</label>
                 <div class="col-sm-7">
-                  <input type="password" name="password" class="form-control" id="inputUserName" placeholder="Enter Your Password" required>
+                  <input type="password" name="pass" class="form-control" id="inputUserName" placeholder="Enter Your Password" required>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-flat" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary btn-flat" id="simpan">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+<!--Modal Edit-->
+  <div class="modal fade" id="edit<?= $id;?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Password Confirmation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="form-horizontal" action="<?php echo site_url('admin/user/edit/'),$id ;?>" method="post" enctype="multipart/form-data">
+          <div class="modal-body">
+            <div class="form-group row">
+                <label for="inputUserName" class="col-sm-4 control-label">Password</label>
+                <div class="col-sm-7">
+                  <input type="password" name="pass" class="form-control" id="inputUserName" placeholder="Enter Your Password" required>
                 </div>
             </div>
           </div>
@@ -119,33 +144,16 @@
 
 <script src="<?= base_url() ?>assets/admin/plugins/jquery/jquery.min.js"></script>
 <script src="<?= base_url() ?>assets/sweetalert/sweetalert2.all.min.js"></script>
-<?php if ($this->session->flashdata('data')=='success'):?>
-<script>
-  alert('hai');
-</script>
-<?php endif; ?>
-<?php if ($this->session->flashdata('data')=='error'): ?>
-<script>
-  $(window).load(function(){
-    Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'Something went wrong!',
-    })
-  });
-</script>
-<?php endif; ?>
-=======
+<?php if ($this->session->flashdata('data')=='error'):?>
   <script>
     const flashData = $('.flash-data').data('flashdata');
-
     if (flashData){
         Swal.fire ({
-            icon: 'success',
-            title:flashData
-        }); 
-            
+            icon: flashData,
+            title: flashData,
+            text : "Access Denied"
+        });     
     }
   </script>
+<?php endif; ?>
 
->>>>>>> 73d70f9a436b3cb78eb1d4c0612e342e1abd040c

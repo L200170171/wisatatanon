@@ -28,9 +28,9 @@
         public function insert(){
             $password = $this->input->post("password", true);
             $data = [
-                "Nama" => $this->input->post("nama",true),
-                "Username" => $this->input->post("username",true),
-                "Password" => password_hash($password, PASSWORD_DEFAULT)
+                "Nama" => htmlspecialchars($this->input->post("nama",true)),
+                "Username" => htmlspecialchars($this->input->post("username",true)),
+                "Password" => htmlspecialchars(password_hash($password, PASSWORD_DEFAULT))
             ];
             $this->db->insert('user',$data);
         }
@@ -41,11 +41,18 @@
         }
         
         public function update($id){
-            $password = $this->input->post("password", true);
+            if(!empty($this->input->post("password", true))){
+                $password = password_hash($this->input->post("password", true), PASSWORD_DEFAULT);
+            }
+            else{
+                $query = $this->db->get_where('user', array("ID_User" => $id));
+                $results = $query->result_array();
+                $password = $results[0]['Password'];
+            }
             $data = [
-                "Nama" => $this->input->post("nama",true),
-                "Username" => $this->input->post("username",true),
-                "Password" => password_hash($password, PASSWORD_DEFAULT)
+                "Nama" => htmlspecialchars($this->input->post("nama",true)),
+                "Username" => htmlspecialchars($this->input->post("username",true)),
+                "Password" => htmlspecialchars($password)
             ];
             $this->db->where('ID_User',$id);
             $this->db->update('user',$data);
@@ -60,7 +67,7 @@
         public function confirm($id){
             $query = $this->db->get_where('user', array("ID_User" => $id));
             $results = $query->result_array();
-            $pw = $this->input->post('password');
+            $pw = $this->input->post('pass');
             if(password_verify($pw,$results[0]['Password'])){
                 return True;
             }

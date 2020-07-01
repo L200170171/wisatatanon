@@ -31,7 +31,7 @@
                   </div>
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Harga</label>
-                      <input type="text" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" name="harga">
+                      <input type="number" class="form-control col-lg-4 col-md-6 col-sm-6" id="exampleFormControlInput1" name="harga">
                       <?= form_error('harga','<small class="text-danger pl-3">','</small>');?>
                   </div>
                   <img class="img-thumbnail" id="blah" height="200" width="200">
