@@ -68,5 +68,14 @@ class Home extends CI_Controller
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/detailfooter');
     }
+
+    public function berita(){
+        $this->load->view('pengguna/templates/header');
+        $this->load->view('pengguna/templates/css'); 
+        $this->load->view("pengguna/templates/navbar");
+        $this->load->view('pengguna/berita');
+        $this->load->view('pengguna/templates/js');
+        $this->load->view('pengguna/templates/detailfooter');
+    }
 }
 ?>

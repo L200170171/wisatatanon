@@ -13,3 +13,10 @@
     width: 100%; /* Full width */
     padding: 20px; /* Some padding */
   }
+
+  .vertical-center
+  {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+  }

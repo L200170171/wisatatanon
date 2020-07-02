@@ -72,14 +72,8 @@
             </div>
           </div>  
         </div>
-
-        <!-- Start Paggination -->
-        <!-- <div class="pagination justify-content-end mt-4" data-aos="fade-up" data-aos-delay="400">
-          <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
-        </div> -->
-
+        <center>
+          <a class="btn btn-primary mt-4" href="#" role="button">Lihat Semua Berita</a>
+        </center>
       </div>
     </section><!-- End More Services Section -->
