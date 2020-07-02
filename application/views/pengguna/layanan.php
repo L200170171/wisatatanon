@@ -5,6 +5,10 @@
 
         <div class="section-title pt-5" data-aos="fade-up">
           <h2>Layanan</h2>
+            <p class="text-justify">
+                Kami menyediakan berbagai layanan yang dapat anda nikmati, anda bisa memilih sesuai dengan kebutuhan anda. Kepuasan anda adalah kebahagiaan bagi kami.
+            </p>
+              
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -31,7 +35,7 @@
 
           <div class="col-lg-9">
             <div id="bentuk-layanan" class="pt-4">
-                <h5 class="text-left font-weight-bold">Bentuk Layanan</h5>
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Bentuk Layanan</h5>
                 <table class="table table-hover">
                     <tbody>
                         <tr>
@@ -60,7 +64,7 @@
             </div>
 
             <div id="pelatihan" class="pt-5">
-                <h5 class="text-left font-weight-bold">Pelatihan yang pernah diadakan</h5>
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Pelatihan yang pernah diadakan</h5>
                 <table class="table table-hover">
                     <tbody> 
                         <tr>
@@ -92,7 +96,7 @@
             </div>
 
             <div id="paket" class="pt-5">
-                <h5 class="text-left font-weight-bold">Paket Terbaru LPSDI Win Solution</h5>  
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Paket Terbaru LPSDI Win Solution</h5>  
                 <table class="table table-hover">
                     <tbody> 
                         <tr>

@@ -10,7 +10,7 @@
           <div class="col-12">
             <p class="text-center">Beberapa pelatihan atau lembaga yang pernah kami tangani</p>
             <table class="table table-striped table-hover table-bordered">
-                <thead class="text-center">
+                <thead class="text-center" style="font-family:Quicksand_Bold;">
                     <tr>
                         <th>No</th>
                         <th>Kegiatan</th>

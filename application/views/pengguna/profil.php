@@ -3,7 +3,7 @@
       <div class="container">
 
         <div class="section-title pt-5" data-aos="fade-up">
-          <h2>Tentang Kami</h2>
+          <h2>Selayang Pandang</h2>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -16,7 +16,7 @@
               </thead>
               <tbody>
                   <tr>
-                      <td><a href="#nama-lembaga" class="scrollto">Nama Lembaga</a></td>
+                      <td><a href="#nama-lembaga" class="scrollto">Nama Lembaga</a></td></p>
                   </tr>
                   <tr>
                       <td><a href="#kantor" class="scrollto">Kantor</a></td>
@@ -45,7 +45,7 @@
               </div>
               
               <div id="nama-lembaga" class="pt-5">
-                <h5 class="text-left font-weight-bold">Nama Lembaga</h5>  
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Nama Lembaga</h5>  
                 <p class="text-justify">
                     Lembaga Pengembangan Sumber Daya Insani (LPSDI) WIN Solution
                     
@@ -53,7 +53,7 @@
               </div>
 
               <div id="kantor" class="pt-5" >
-                <h5 class="text-left font-weight-bold">Kantor</h5>  
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Kantor</h5>  
                 <p class="text-left">
                 Desa Wisata Tanon,Ngrawan, Getasan, Semarang, Jawa Tengah 50774
                 HP: 081329492255/085950220778,email: winsolutionlpsdi@gmail.com    
@@ -61,7 +61,7 @@
               </div>
 
               <div id="tujuan" class="pt-5">
-                <h5 class="text-left font-weight-bold">Tujuan</h5>  
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Tujuan</h5>  
                 <ol class="text-justify pl-4">
                     <li>Meningkatkan sumber daya manusia yang mempunyai kesadaran kritis</li>
                     <li>Mengasah daya Kreatifitas masyarakat</li>
@@ -73,21 +73,21 @@
               </div>
 
               <div id="motto" class="pt-5">
-                <h5 class="text-left font-weight-bold">Motto</h5>  
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Motto</h5>  
                 <p class="text-justify">
                 <i>“Berpikir positif, Berperasaan positif, dan Bertindak positif”</i>
                 </p>
               </div>
 
               <div id="wilayah-kerja" class="pt-5">
-                <h5 class="text-left font-weight-bold">Wilayah Kerja</h5>  
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Wilayah Kerja</h5>  
                 <p class="text-justify">
                 Lembaga Pengembangan Sumber Daya Insani (LPSDI) WIN Solution bergerak pada pendidikan luar sekolah yang cakupannya meliputi <b>peningkatan kualitas SDM, peningkatan ketrampilan masyarakat serta pemberdayaan masyarakat</b>.
                 </p>
               </div>
 
               <div id="mitra-kerja" class="pt-5">
-                <h5 class="text-left font-weight-bold">Mitra Kerja</h5>  
+                <h5 class="text-left font-weight-bold" style="font-family:Quicksand_Bold;">Mitra Kerja</h5>  
                 <div class="row">
 
                   <div class="col-lg-2 col-md-4 col-6">

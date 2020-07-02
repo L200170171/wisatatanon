@@ -24,7 +24,7 @@
 
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/more-services-3.jpg");' data-aos="fade-up" data-aos-delay="100">
+            <div class="card" style='background-image: url("assets/img/portfolio/grobak-sodor.jpg");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
                 <h5 class="card-title">Permainan Tradisional</h5>
                 <p class="card-text">memperkenalkan kembali dengan permainan tradisional tempo dulu seperti Grobak Sodor dan Serok Mancung yang sekarang sudah sering dilupakan.</p>
@@ -32,7 +32,7 @@
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/more-services-4.jpg");' data-aos="fade-up" data-aos-delay="200">
+            <div class="card" style='background-image: url("assets/img/portfolio/anyaman-Mendong.jpg");' data-aos="fade-up" data-aos-delay="200">
               <div class="card-body">
                 <h5 class="card-title">Sentra Usaha</h5>
                 <p class="card-text">memperkenalkan usaha unik seperti Sabun Susu dan Memerah Sapi yang berkembang di dusun Tanon. </p>

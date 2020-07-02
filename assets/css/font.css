@@ -10,6 +10,11 @@
 }
 @font-face {
     font-family: 'knewave';
-    src: url('../fonts/custom/knewave.ttf')format("truetype");
+    src: url('../fonts/custom/knewave.ttf')format("truetype"); 
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Quicksand_Bold';
+    src: url('../fonts/custom/Quicksand_Bold.otf')format("opentype");
     font-weight: normal;
 }
