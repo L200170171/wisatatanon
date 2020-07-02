@@ -3,8 +3,10 @@
 
       <div class="logo mr-auto">
         <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="<?= base_url() ?>"><img src="<?= base_url() ?>assets/img/logo/logo.png" alt="" class="img-fluid"></a>
-        <!-- <h1 class="text-light"><a href="#"><span>Desa Wisata Tanon</span></a></h1> -->
+        <a href="<?= base_url() ?>" class="navbar-brand text-dark" style="font-family:Playlist-Script; font-size:200%;">
+          <!-- <img src="<?= base_url() ?>assets/img/logo/logo.png" alt="" class="img-fluid"> -->
+          Desa Wisata Tanon
+        </a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">

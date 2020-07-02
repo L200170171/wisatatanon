@@ -10,7 +10,8 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="contact-about">
-              <h3>Desa Wisata Tanon</h3>
+            <img src="<?= base_url() ?>assets/img/logo/logo.png" alt="" width="50%" class="img-fluid">
+              <!-- <h3>Desa Wisata Tanon</h3> -->
               <div class="info">
                 <div>
                   <i class="ri-map-pin-line"></i>

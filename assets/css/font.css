@@ -1,6 +1,15 @@
 @font-face {
-    font-family: 'angrybird';
-    src: url('../fonts/custom/angrybirds-regular.ttf')format('truetype');
+    font-family: 'Playlist-Caps';
+    src: url('../fonts/custom/Playlist-Caps.otf')format("opentype");
     font-weight: normal;
-	font-style: normal;
+}
+@font-face {
+    font-family: 'Playlist-Script';
+    src: url('../fonts/custom/Playlist-Script.otf')format("opentype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'knewave';
+    src: url('../fonts/custom/knewave.ttf')format("truetype");
+    font-weight: normal;
 }

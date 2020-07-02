@@ -88,16 +88,60 @@
 
               <div id="mitra-kerja" class="pt-5">
                 <h5 class="text-left font-weight-bold">Mitra Kerja</h5>  
-                <p class="text-justify">
-                Menunggu Pak Agus Menunggu Pak Agus Menunggu Pak Agus Menunggu Pak Agus Menunggu Pak Agus
-                Menunggu Pak Agus Menunggu Pak Agus Menunggu Pak AgusMenunggu Pak Agus.
-                </p>
-              </div>
+                <div class="row">
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/austria.jpg" class="img-fluid" alt="" data-aos="zoom-in">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/australia.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/bulgaria.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="200">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/canada.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="300">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/china.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="400">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/denmark.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/europe.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/finland.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/france.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                  </div>
+                  
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/germany.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/unitedkingdom.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                  </div>
+
+                  <div class="col-lg-2 col-md-4 col-6">
+                    <img src="<?= base_url() ?>assets/img/organicbiolabel/usa.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="500">
+                  </div>
+                </div>
           </div>
         </div><!-- End F.A.Q Item-->
       </div>
     </section><!-- End Profil Section -->
-
 
     <?php $this->load->view('pengguna/templates/detailfooter'); ?>
 
