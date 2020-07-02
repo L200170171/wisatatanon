@@ -73,7 +73,7 @@
           </div>  
         </div>
         <center>
-          <a class="btn btn-primary mt-4" href="#" role="button">Lihat Semua Berita</a>
+          <a class="btn btn-primary mt-4" href="<?= base_url() ?>home/berita" role="button">Lihat Semua Berita</a>
         </center>
       </div>
     </section><!-- End More Services Section -->
