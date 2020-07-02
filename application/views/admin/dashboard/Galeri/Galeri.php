@@ -68,7 +68,7 @@
                         </td>
                         <td class="text-center">
                           <a href="<?= base_url('admin/galeri/edit/').$id?>" class="btn btn-warning" title="edit"><span class="fa  fa-pencil-square-o"></span></a>
-                          <a href="<?= base_url('admin/galeri/delete/').$id ?>" class="badge badge-danger tombol-hapus"><span class="fa fa-trash"></span></a>
+                          <a href="<?= base_url('admin/galeri/delete/').$id ?>" class="btn btn-danger tombol-hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                   <?php endforeach; ?>

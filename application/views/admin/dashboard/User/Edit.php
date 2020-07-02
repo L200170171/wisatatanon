@@ -29,30 +29,30 @@
 
                 <form action="<?= base_url("admin/user/update/").$id?>" method="POST" enctype="multipart/form-data">
                   <div class="row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6" >
                       <label for="exampleFormControlInput1">Nama User</label>
-                      <input type="text" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="nama user" value="<?= $nama ?>">
+                      <input type="text" class="form-control" name="nama" id="exampleFormControlInput1" placeholder="nama user" value="<?= $nama ;?>" required>
                       <?= form_error('nama','<small class="text-danger pl-3">','</small>');?>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6" >
                         <label for="exampleFormControlInput1">Password</label>
-                        <input type="password" class="form-control" name="password" id="exampleFormControlInput1" placeholder="password">
+                        <input type="password" class="form-control" name="password" id="exampleFormControlInput1" placeholder="password" >
                         <?= form_error('password','<small class="text-danger pl-3">','</small>');?>
                     </div>
                   </div>
                 <div class="row">
                   <div class="form-group col-md-6">
                       <label for="exampleFormControlInput1">Username</label>
-                      <input type="text" class="form-control" name="username" id="exampleFormControlInput1" placeholder="username" value="<?= $un ?>">
+                      <input type="text" class="form-control" name="username" id="exampleFormControlInput1" placeholder="username" value="<?= $un ;?>" required>
                       <?= form_error('username','<small class="text-danger pl-3">','</small>');?>
                   </div>
                   <div class="form-group col-md-6">
                       <label for="exampleFormControlInput1">Repassword</label>
-                      <input type="password" class="form-control" name="repassword" id="exampleFormControlInput1" placeholder="password">
+                      <input type="password" class="form-control" name="repassword" id="exampleFormControlInput1" placeholder="ulangi password" >
                       <?= form_error('repassword','<small class="text-danger pl-3">','</small>');?>
                   </div>
-                </div>
-                <button class="btn btn-primary" type="submit">Edit</button>
+                </div>  
+                <button class="btn btn-primary" type="submit" >Edit</button>
                 </form>
                 <?php endforeach ?>
               </div>
@@ -66,3 +66,5 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+  

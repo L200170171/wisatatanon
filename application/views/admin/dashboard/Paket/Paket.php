@@ -37,52 +37,31 @@
                 <thead>
                 <tr>
                   <th width="30px">No</th>
-                  <th>Thumbnail</th>
-                  <th>Deskripsi</th>
+                  <th width="300px">Thumbnail</th>
+                  <th width="300px">Deskripsi</th>
+                  <th>Harga</th>
                   <th width="100px">Action</th>
                 </tr>
                 </thead>
                 <?php 
+                  $no = 0;
                   foreach($data as $i):
+                    $no++;
                     $id = $i['ID_paket'];
                     $nama = $i['nama_paket'];
-                    $keterangan = $i['ketarangan'];
-                    $harga = $i['harga'];
+                    $keterangan = $i['keterangan'];
+                    $harga = number_format($i['harga'],2,',','.');
                     $gambar = $i['gambar'];                    
                 ?>
                 <tbody>
                     <tr>
-                        <td><?= $id ?></td>
-                        <td><img src="<?=base_url('assets/images/paket/').$gambar;?>" width="300px" hight="200px"></td>
-                        <td>
-                          Nama &nbsp;&nbsp;: <?= $nama ?>
-                          keterangan : <?= $keterangan ?>
-                          harga &nbsp;&nbsp;: <?= $harga ?>
-                        </td>
+                        <td><?= $no ?></td>
+                        <td><h3><?= $nama ?></h3><img src="<?=base_url('assets/images/paket/').$gambar;?>" width="300px" hight="200px"></td>
+                        <td><?= $keterangan ?></td>
+                        <td><?= 'Rp. '.$harga ?></td>
                         <td>
                           <a href="<?= base_url('admin/paket/edit/').$id ?>" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
-                          <a class="btn btn-danger admin-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
-                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
-                        <a class="btn btn-danger tombol-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>B</td>
-                        <td>
-                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa fa-pencil-square-o"></span></a>
-                        <a class="btn btn-danger tombol-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>C</td>
-                        <td>
-                        <a href="#" class="btn btn-primary" ><span class="fa fa-bars" title="detail"></span></a>
-                        <a href="<?= base_url() ?>admin/paket/edit" class="btn btn-warning" title="edit"><span class="fa  fa-pencil-square-o"></span></a>
-                        <a class="btn btn-danger tombol-hapus" href="#" title="hapus"><span class="fa fa-trash"></span></a>
+                          <a class="btn btn-danger tombol-hapus" href="<?= base_url('admin/paket/delete/').$id ?>" title="hapus"><span class="fa fa-trash"></span></a>
                         </td>
                     </tr>
                     <?php endforeach ?>

@@ -34,9 +34,9 @@
                     $foto = $this->upload->data('file_name');
                 }
             $data = [
-                "nama" => $this->input->post("nama",true),
-                "keterangan" => $this->input->post("deskripsi",true),
-                "harga" => $this->input->post("harga",true),
+                "nama_paket" => htmlspecialchars($this->input->post("nama",true)),
+                "keterangan" => htmlspecialchars($this->input->post("deskripsi",true)),
+                "harga" => htmlspecialchars($this->input->post("harga",true)),
                 "gambar" => $foto
             ];
             $this->db->insert('paket_wisata',$data);
@@ -68,9 +68,9 @@
                 unlink('./assets/images/paket/'.$fotoa);
             }
             $data = [
-                "nama" => $this->input->post("nama",true),
-                "keterangan" => $this->input->post("deskripsi",true),
-                "harga" => $this->input->post("harga",true),
+                "nama_paket" => htmlspecialchars($this->input->post("nama",true)),
+                "keterangan" => htmlspecialchars($this->input->post("deskripsi",true)),
+                "harga" => htmlspecialchars($this->input->post("harga",true)),
                 "gambar" => $foto
             ];
             $this->db->where('ID_paket',$id);

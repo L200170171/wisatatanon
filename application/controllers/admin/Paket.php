@@ -6,6 +6,8 @@ class Paket extends CI_Controller{
     function __construct(){
         parent::__construct();
         $this->load->model('M_paket');
+        $this->load->library('form_validation');
+        $this->load->helper('form');
     }
 
     public function index(){
@@ -47,13 +49,37 @@ class Paket extends CI_Controller{
             $this->load->view('admin/partial/head',$data);
             $this->load->view('admin/partial/navbar');
             $this->load->view('admin/partial/sidebar');
-            $this->load->view('admin/dashboard/paket/tambah',data);
+            $this->load->view('admin/dashboard/paket/tambah',$data);
             $this->load->view('admin/partial/footer');
             $this->load->view('admin/partial/js.php');
         }
         else{
             $this->M_paket->insert();
-            redirect("admin/user");
+            redirect("admin/paket");
         }
+    }
+
+    public function update($id){
+        $this->form_validation->set_rules($this->M_paket->rules());
+        if($this->form_validation->run()==false){
+            $data['title']='Tambah Paket';
+            $this->load->view('admin/partial/head',$data);
+            $this->load->view('admin/partial/navbar');
+            $this->load->view('admin/partial/sidebar');
+            $this->load->view('admin/dashboard/paket/edit',$data);
+            $this->load->view('admin/partial/footer');
+            $this->load->view('admin/partial/js.php');
+        }
+        else{
+            $this->M_paket->update($id);
+            redirect("admin/paket");
+        }
+    }
+    
+    public function delete($id)
+    {
+        $this->M_paket->hapus_foto($id);
+        $this->M_paket->hapus($id);
+        redirect("admin/paket");
     }
 }

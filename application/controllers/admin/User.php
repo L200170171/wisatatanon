@@ -18,13 +18,13 @@ class User extends CI_Controller{
         $this->load->view('admin/partial/head',$data);
         $this->load->view('admin/partial/navbar');
         $this->load->view('admin/partial/sidebar');
-        $this->load->view('admin/dashboard/user/user');
+        $this->load->view('admin/dashboard/user/user',$data);
         $this->load->view('admin/partial/footer');
         $this->load->view('admin/partial/js.php');
     }
 
     public function tambah(){
-        $data['title']='Tambah Paket';
+        $data['title']='Tambah User';
         $this->load->view('admin/partial/head',$data);
         $this->load->view('admin/partial/navbar');
         $this->load->view('admin/partial/sidebar');
@@ -34,37 +34,9 @@ class User extends CI_Controller{
     }
 
     public function edit($id){
-        $data['title']='Edit Artikel';
-        $data['data']=$this->M_user->get_data($id);
-        $this->load->view('admin/partial/head',$data);
-        $this->load->view('admin/partial/navbar');
-        $this->load->view('admin/partial/sidebar');
-        $this->load->view('admin/dashboard/user/edit',$data);
-        $this->load->view('admin/partial/footer');
-        $this->load->view('admin/partial/js.php');
-    }
-
-    public function insert(){
-        $this->form_validation->set_rules($this->M_user->rules());
-        if($this->form_validation->run()==false){
-            $data['title']='Tambah Paket';
-            $this->load->view('admin/partial/head',$data);
-            $this->load->view('admin/partial/navbar');
-            $this->load->view('admin/partial/sidebar');
-            $this->load->view('admin/dashboard/user/tambah');
-            $this->load->view('admin/partial/footer');
-            $this->load->view('admin/partial/js.php');
-        }
-        else{
-            $this->M_user->insert();
-            redirect("admin/user");
-        }
-    }
-
-    public function update($id){
-        $this->form_validation->set_rules($this->M_user->rules());
-        if($this->form_validation->run()==false){
-            $data['title']='Tambah Paket';
+        if($this->M_user->confirm($id))
+        {
+            $data['title']='Edit User';
             $data['data']=$this->M_user->get_data($id);
             $this->load->view('admin/partial/head',$data);
             $this->load->view('admin/partial/navbar');
@@ -74,12 +46,58 @@ class User extends CI_Controller{
             $this->load->view('admin/partial/js.php');
         }
         else{
+            $this->session->set_flashdata('data','error');
+            redirect('admin/user',reload);
+        }
+    }
+
+    public function insert(){
+        $this->form_validation->set_rules($this->M_user->rules());
+        if($this->form_validation->run()==false){
+            $data['title']='Tambah User';
+            $this->load->view('admin/partial/head',$data);
+            $this->load->view('admin/partial/navbar');
+            $this->load->view('admin/partial/sidebar');
+            $this->load->view('admin/dashboard/user/tambah');
+            $this->load->view('admin/partial/footer');
+            $this->load->view('admin/partial/js.php');
+        }
+        else{
+            $this->session->set_flashdata('data','add');
+            $this->M_user->insert();
+            redirect("admin/user");
+        }
+    }
+
+    public function update($id){
+        $this->form_validation->set_rules($this->M_user->rules());
+        if($this->form_validation->run()==false){
+            $data['title']='Edit User';
+            $data['data']=$this->M_user->get_data($id);
+            $this->load->view('admin/partial/head',$data);
+            $this->load->view('admin/partial/navbar');
+            $this->load->view('admin/partial/sidebar');
+            $this->load->view('admin/dashboard/user/edit',$data);
+            $this->load->view('admin/partial/footer');
+            $this->load->view('admin/partial/js.php');
+        }
+        else{
+            $this->session->set_flashdata('data','update');
             $this->M_user->update($id);
             redirect("admin/user");
         }
     }
+    
     public function delete($id){
-        $this->M_user->hapus($id);
-        redirect('admin/user');
+        if($this->M_user->confirm($id))
+        {
+            $this->M_user->hapus($id);
+            $this->session->set_flashdata('data','success');
+            redirect('admin/user',reload);
+        }
+        else{
+            $this->session->set_flashdata('data','error');
+            redirect('admin/user',reload);
+        }
     }
 }
