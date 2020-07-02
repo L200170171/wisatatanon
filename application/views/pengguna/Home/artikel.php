@@ -11,7 +11,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a>Budaya Tradisional Desa Wisata Tanon di kenalkan se seluruh indonesia</a></h5>
                   <div class="col text-center">
-                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>home/detailberita">Baca Selengkapnya</a>
+                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>berita/detail">Baca Selengkapnya</a>
                   </div>
               </div>
             </div>
@@ -22,7 +22,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a>Budaya Tradisional Desa Wisata Tanon di kenalkan se seluruh indonesia</a></h5>
                   <div class="col text-center">
-                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>home/detailberita">Baca Selengkapnya</a>
+                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>berita/detail">Baca Selengkapnya</a>
                   </div>
               </div>
             </div>
@@ -33,7 +33,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a>Budaya Tradisional Desa Wisata Tanon di kenalkan se seluruh indonesia</a></h5>
                   <div class="col text-center">
-                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>home/detailberita">Baca Selengkapnya</a>
+                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>berita/detail">Baca Selengkapnya</a>
                   </div>
               </div>
             </div>
@@ -44,7 +44,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a>Budaya Tradisional Desa Wisata Tanon di kenalkan se seluruh indonesia</a></h5>
                   <div class="col text-center">
-                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>home/detailberita">Baca Selengkapnya</a>
+                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>berita/detail">Baca Selengkapnya</a>
                   </div>
               </div>
             </div>
@@ -55,7 +55,7 @@
               <div class="card-body">
                 <h5 class="card-title"><a>Budaya Tradisional Desa Wisata Tanon di kenalkan se seluruh indonesia</a></h5>
                   <div class="col text-center">
-                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>home/detailberita">Baca Selengkapnya</a>
+                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>berita/detail">Baca Selengkapnya</a>
                   </div>
               </div>
             </div>
@@ -66,14 +66,14 @@
               <div class="card-body">
                 <h5 class="card-title"><a>Budaya Tradisional Desa Wisata Tanon di kenalkan se seluruh indonesia</a></h5>
                   <div class="col text-center">
-                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>home/detailberita">Baca Selengkapnya</a>
+                    <a class="btn btn-sm btn-primary" href="<?= base_url()?>berita/detail">Baca Selengkapnya</a>
                   </div>
               </div>
             </div>
           </div>  
         </div>
         <center>
-          <a class="btn btn-primary mt-4" href="<?= base_url() ?>home/berita" role="button">Lihat Semua Berita</a>
+          <a class="btn btn-primary mt-4" href="<?= base_url() ?>berita" role="button">Lihat Semua Berita</a>
         </center>
       </div>
     </section><!-- End More Services Section -->
