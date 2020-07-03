@@ -55,6 +55,7 @@ class Paket extends CI_Controller{
         }
         else{
             $this->M_paket->insert();
+            $this->session->set_flashdata('data','add');
             redirect("admin/paket");
         }
     }
@@ -72,6 +73,7 @@ class Paket extends CI_Controller{
         }
         else{
             $this->M_paket->update($id);
+            $this->session->set_flashdata('data','update');
             redirect("admin/paket");
         }
     }
@@ -80,6 +82,7 @@ class Paket extends CI_Controller{
     {
         $this->M_paket->hapus_foto($id);
         $this->M_paket->hapus($id);
+        $this->session->set_flashdata('data','delete');
         redirect("admin/paket");
     }
 }

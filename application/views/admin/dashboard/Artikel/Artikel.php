@@ -15,7 +15,7 @@
     <!-- Main content -->
     <section class="content">
     <div class="row">
-        <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('notif'); ?>"></div>
+      <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('data'); ?>"></div>
         <div class="col-12">
 
           <div class="card card-primary">

@@ -52,17 +52,20 @@ class Artikel extends CI_Controller{
 
     public function insert(){
         $this->M_artikel->insert();
+        $this->session->set_flashdata('data','add');
         redirect('admin/artikel');
     }
 
     public function update($id){
         $this->M_artikel->update($id);
+        $this->session->set_flashdata('data','update');
         redirect('admin/artikel');
     }
     
     public function delete($id){
         $this->M_artikel->hapus_foto($id);
         $this->M_artikel->hapus($id);
+        $this->session->set_flashdata('data','delete');
         redirect('admin/artikel');
     }
 }

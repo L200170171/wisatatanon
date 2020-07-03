@@ -156,39 +156,5 @@
     }
   </script>
 <?php endif; ?>
-<?php if ($this->session->flashdata('data')=='success'):?>
-  <script>
-    const flashData = $('.flash-data').data('flashdata');
-    if (flashData){
-        Swal.fire ({
-            icon: flashData,
-            title: flashData,
-            text : "Data Successfully Deleted"
-        });     
-    }
-  </script>
-<?php endif; ?>
-<?php if ($this->session->flashdata('data')=='add'):?>
-  <script>
-    const flashData = $('.flash-data').data('flashdata');
-    if (flashData){
-        Swal.fire ({
-            icon: "success",
-            text : "Data Successfully Added"
-        });     
-    }
-  </script>
-<?php endif; ?>
-<?php if ($this->session->flashdata('data')=='update'):?>
-  <script>
-    const flashData = $('.flash-data').data('flashdata');
-    if (flashData){
-        Swal.fire ({
-            icon: "success",
-            text : "Data Has Been Updated"
-        });     
-    }
-  </script>
-<?php endif; ?>
 
 

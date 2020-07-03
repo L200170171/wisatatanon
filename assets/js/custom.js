@@ -29,3 +29,25 @@ title: 'Terima Kasih atas testimoni yang anda berikan',
 showConfirmButton: true
 })
 })
+
+const flashData = $('.flash-data').data('flashdata');
+    if (flashData == "delete"){
+        Swal.fire ({
+            icon: "success",
+            text : "Data Successfully Deleted"
+        });     
+    }
+    
+    else if (flashData == "add"){
+        Swal.fire ({
+            icon: "success",
+            text : "Data Successfully Added"
+        });     
+    }
+
+    else if (flashData == "update"){
+      Swal.fire ({
+          icon: "success",
+          text : "Data Has Been Updated"
+      });     
+  }

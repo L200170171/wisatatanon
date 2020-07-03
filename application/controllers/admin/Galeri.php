@@ -42,17 +42,20 @@ class Galeri extends CI_Controller{
 
     public function insert(){
         $this->M_galeri->insert();
+        $this->session->set_flashdata('data','add');
         redirect('admin/galeri');
     }
 
     public function delete($id){
         $this->M_galeri->hapus_foto($id);
         $this->M_galeri->hapus($id);
+        $this->session->set_flashdata('data','delete');
         redirect('admin/galeri');
     }
 
     public function update($id){
         $this->M_galeri->update($id);
+        $this->session->set_flashdata('data','update');
         redirect('admin/galeri');
     }
 }

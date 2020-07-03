@@ -82,8 +82,8 @@ class User extends CI_Controller{
             $this->load->view('admin/partial/js.php');
         }
         else{
-            $this->session->set_flashdata('data','update');
             $this->M_user->update($id);
+            $this->session->set_flashdata('data','update');
             redirect("admin/user");
         }
     }
@@ -92,7 +92,7 @@ class User extends CI_Controller{
         if($this->M_user->confirm($id))
         {
             $this->M_user->hapus($id);
-            $this->session->set_flashdata('data','success');
+            $this->session->set_flashdata('data','delete');
             redirect('admin/user',reload);
         }
         else{
