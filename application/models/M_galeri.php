@@ -6,6 +6,13 @@
             return $query->result_array();
         }
 
+        public function highlight(){
+            $this->db->order_by('tanggal_upload', ' DESC');
+            $this->db->limit(3);
+            $query = $this->db->get("galeri");
+            return $query->result_array();
+        }
+
 
         private function set_upload_options(){   
             $config = array();

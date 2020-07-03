@@ -3,13 +3,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Home extends CI_Controller
 {
+    function __construct(){
+        parent::__construct();
+        $this->load->model('M_artikel','artikel');
+        $this->load->model('M_galeri','galeri');
+        $this->load->model('M_paket','paket');
+        $this->load->model('M_publikasi','publish');
+        $this->load->model('M_testimoni','testi');
+
+    }
+    
+
     public function index()
     {
+        $data['testi']=$this->publish->t_data();
+        $data['galeri']=$this->galeri->highlight();
         $this->load->view('pengguna/templates/header');
         $this->load->view('pengguna/templates/css');
         $this->load->view('pengguna/templates/navbar');
         $this->load->view('pengguna/templates/slider');
-        $this->load->view('pengguna/home/home');
+        $this->load->view('pengguna/home/home',$data);
         $this->load->view('pengguna/templates/contact'); 
         $this->load->view('pengguna/templates/detailfooter'); 
         $this->load->view('pengguna/templates/js');
@@ -85,6 +98,11 @@ class Home extends CI_Controller
         $this->load->view('pengguna/gallery');
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/detailfooter');
+    }
+
+    public function insert_testi(){
+        $this->testi->insert();
+        redirect('Home/formtestimoni');
     }
 }
 ?>
