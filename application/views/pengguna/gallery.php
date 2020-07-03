@@ -9,7 +9,7 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap portfolio-links">
             <img src="<?php echo base_url('assets/img/portfolio/grobak-sodor.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -21,7 +21,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="<?php echo base_url('assets/img/portfolio/menabung-kelereng.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -33,7 +33,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="<?php echo base_url('assets/img/portfolio/kuda-debog.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -45,7 +45,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="<?php echo base_url('assets/img/portfolio/grobak-sodor.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -57,7 +57,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="<?php echo base_url('assets/img/portfolio/menabung-kelereng.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -69,7 +69,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="<?php echo base_url('assets/img/portfolio/kuda-debog.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -81,7 +81,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="<?php echo base_url('assets/img/portfolio/grobak-sodor.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -93,7 +93,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="<?php echo base_url('assets/img/portfolio/menabung-kelereng.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -105,7 +105,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-gallery">
+          <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="<?php echo base_url('assets/img/portfolio/kuda-debog.jpg'); ?>" class="img-fluid" alt="">
               <div class="portfolio-info">
