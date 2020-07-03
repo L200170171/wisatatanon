@@ -15,8 +15,7 @@
               <div class="portfolio-info">
                 <h4>Permainan Grobak Sodor</h4>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/grobak-sodor.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="<?php echo (base_url('home/portfolio')); ?>" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="<?php echo base_url('assets/img/portfolio/menabung-kelereng.jpg'); ?>" data-gall="portfolioGallery" class="venobox" title="Perbesar Gambar"><i class="bx bx-show bx-burst bx-flip-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -28,8 +27,7 @@
               <div class="portfolio-info">
                 <h4>Permainan Menabung Kelereng</h4>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/menabung-kelereng.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="<?php echo (base_url('home/portfolio')); ?>" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="<?php echo base_url('assets/img/portfolio/menabung-kelereng.jpg'); ?>" data-gall="portfolioGallery" class="venobox" title="Perbesar Gambar"><i class="bx bx-show bx-burst bx-flip-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -41,8 +39,7 @@
               <div class="portfolio-info">
                 <h4>Permainan Kuda Debog</h4>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/kuda-debog.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="<?php echo (base_url('home/portfolio')); ?>" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="<?php echo base_url('assets/img/portfolio/menabung-kelereng.jpg'); ?>" data-gall="portfolioGallery" class="venobox" title="Perbesar Gambar"><i class="bx bx-show bx-burst bx-flip-vertical"></i></a>
                 </div>
               </div>
             </div>
@@ -50,7 +47,7 @@
 
         </div>
         <center>
-          <a class="btn btn-primary" href="#" role="button">Lihat Semua Gallery</a>
+          <a class="btn btn-primary" href="<?php echo (base_url('home/gallery')); ?>" role="button">Lihat Semua Gallery</a>
         </center>
       </div>
     </section><!-- End Portfolio Section -->
