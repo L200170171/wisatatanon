@@ -2,6 +2,12 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Testimoni extends CI_Controller{
+    function __construct(){
+        parent::__construct();
+        if($this->session->userdata('Login') !== TRUE){
+            redirect('admin/login');
+          }
+    }
     
     public function index(){
         $data['title']='Testimoni';

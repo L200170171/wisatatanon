@@ -8,6 +8,9 @@ class Paket extends CI_Controller{
         $this->load->model('M_paket');
         $this->load->library('form_validation');
         $this->load->helper('form');
+        if($this->session->userdata('Login') !== TRUE){
+            redirect('admin/login');
+        }
     }
 
     public function index(){

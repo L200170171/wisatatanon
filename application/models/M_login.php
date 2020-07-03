@@ -10,6 +10,7 @@
                     $data=[
                         'un' => $user['Username'],
                         'nama' => $user['Nama'],
+                        'Login' => TRUE
                     ];
                     $this->session->set_userdata($data);
                     redirect('admin/home');

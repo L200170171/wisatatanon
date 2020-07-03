@@ -6,6 +6,9 @@ class Galeri extends CI_Controller{
     function __construct(){
         parent::__construct();
         $this->load->model('M_galeri');
+        if($this->session->userdata('Login') !== TRUE){
+            redirect('admin/login');
+          }
     }
 
     public function index(){

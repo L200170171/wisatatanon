@@ -8,6 +8,9 @@ class User extends CI_Controller{
         $this->load->model('M_user');
         $this->load->library('form_validation');
         $this->load->helper('form');
+        if($this->session->userdata('Login') !== TRUE){
+            redirect('admin/login');
+          }
     }
 
     public function index(){
