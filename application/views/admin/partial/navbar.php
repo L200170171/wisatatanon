@@ -20,18 +20,18 @@
           <!-- nama -->
           <a class="dropdown-item">
             <i class="fa fa-user mr-2"></i>Nama
-            <span class="float-right">Sopo</span>
+            <span class="float-right"><?= $this->session->nama ?></span>
           </a>
           <!--  -->
           <!-- nama -->
           <a class="dropdown-item">
             <i class="fa fa-user mr-2"></i>Username
-            <span class="float-right">Sopo</span>
+            <span class="float-right"><?= $this->session->un ?></span>
           </a>
           <!--  -->
           <div class="dropdown-divider"></div>
           <div class="dropdown-item dropdown-footer">
-            <a class="btn btn-danger" href="#" role="button">Logout</a>
+            <a class="btn btn-danger" href="<?= base_url('admin/user/out'); ?>">Logout</a>
           </div>
         </div>
       </li>

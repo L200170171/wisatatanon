@@ -103,4 +103,9 @@ class User extends CI_Controller{
             redirect('admin/user',reload);
         }
     }
+
+    public function out(){
+        $this->session->sess_destroy();
+        redirect("admin/login");
+    }
 }

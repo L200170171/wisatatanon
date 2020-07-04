@@ -20,8 +20,6 @@
             $config['allowed_types'] = 'jpg|png|jpeg'; #ekstensi yang diizinkan
             $config['encrypt_name'] = TRUE; #pengubahan nama file
             $config['overwrite'] = FALSE;
-            $config['width'] = 800;
-            $config['height'] = 800;
 
             return $config;
         }
