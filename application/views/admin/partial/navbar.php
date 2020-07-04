@@ -6,5 +6,35 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
     </ul>
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link text-dark" data-toggle="dropdown" href="#">
+          <i class="fa fa-user"></i>
+          Jeneng User
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">My Profile</span>
+          <div class="dropdown-divider"></div>
+          <!-- nama -->
+          <a class="dropdown-item">
+            <i class="fa fa-user mr-2"></i>Nama
+            <span class="float-right">Sopo</span>
+          </a>
+          <!--  -->
+          <!-- nama -->
+          <a class="dropdown-item">
+            <i class="fa fa-user mr-2"></i>Username
+            <span class="float-right">Sopo</span>
+          </a>
+          <!--  -->
+          <div class="dropdown-divider"></div>
+          <div class="dropdown-item dropdown-footer">
+            <a class="btn btn-danger" href="#" role="button">Logout</a>
+          </div>
+        </div>
+      </li>
+    </ul>
 </nav>
   <!-- /.navbar -->
