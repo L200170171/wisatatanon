@@ -49,8 +49,12 @@
   <!-- /.content-wrapper -->
 
 <script src="<?= base_url() ?>assets/admin/plugins/jquery/jquery.min.js"></script>
+<script src="<?= base_url() ?>assets/sweetalert/sweetalert2.all.min.js"></script>
 <script>
-  function readURL(input) {
+
+var _URL = window.URL || window.webkitURL;
+
+function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
     
@@ -62,7 +66,44 @@
   }
 }
 
-$("#imgInp").change(function() {
-  readURL(this);
+$("#imgInp").change(function(e) {
+    var file, img;
+    var x = this;
+    if ((file = this.files[0])) {
+        img = new Image();
+        img.onload = function() {
+            if(this.width >= 600 && this.height >= 300 )
+            {
+              readURL(x);
+            }
+            else{
+              Swal.fire ({
+                  icon: "error",
+                  text : "Your image resolution is too small, make sure your image resolution is 300x600 or greater"
+              });
+              var myinput = document.getElementById("imgInp");
+              myinput.value = myinput.defaultValue;
+              $('#blah').attr('src', '');
+            }
+        };
+        img.onerror = function() { 
+          Swal.fire ({
+              icon: "error",
+              text : "Make sure your files are in jpg, png or jpeg format"
+          }); 
+            var myinput = document.getElementById("imgInp");
+            myinput.value = myinput.defaultValue;
+        };
+        img.src = _URL.createObjectURL(file);
+
+
+    }
+
 });
+
+  
+
+//$("#imgInp").change(function() {
+//  readURL(this);
+//});
 </script>

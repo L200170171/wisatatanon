@@ -26,20 +26,35 @@
 
         function insert(){
             $foto = $_FILES['foto'];
+            $type = get_mime_by_extension($_FILES['foto']['name']);
             $_FILES['userfile']['name']= $_FILES['foto']['name'];
             $_FILES['userfile']['type']= $_FILES['foto']['type'];
             $_FILES['userfile']['tmp_name']= $_FILES['foto']['tmp_name'];
             $_FILES['userfile']['error']= $_FILES['foto']['error'];
             $this->load->library('upload');
             $this->upload->initialize($this->set_upload_options());
-            if(!$this->upload->do_upload())
-                {
-                    $this->upload->display_errors();
-                    die;
+            $image_info = getimagesize($_FILES["foto"]["tmp_name"]);
+            $width = $image_info[0];
+            $height = $image_info[1];
+            if($type == 'image/jpg' || $type == 'image/png' || $type == 'image/jpeg' ){
+                if($width < 600 && $height < 300 ){
+                    $this->session->set_flashdata('data','gagal');
+                    redirect('admin/galeri');
                 }
-            else{
-                    $foto = $this->upload->data('file_name');
-                }
+                if(!$this->upload->do_upload())
+                    {
+                        $this->upload->display_errors();
+                        die;
+                    }
+                else{
+                        $foto = $this->upload->data('file_name');
+                    }
+            }
+
+            else{    
+                $this->session->set_flashdata('data','fail');
+                redirect('admin/galeri');
+            }
             $data = [
                 "judul" => $this->input->post("judul",true),
                 "nama_gambar" => $foto,

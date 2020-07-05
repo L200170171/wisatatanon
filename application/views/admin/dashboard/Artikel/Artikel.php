@@ -37,8 +37,8 @@
                 <thead>
                 <tr>
                   <th width="30">No</th>
-                  <th>Judul</th>
                   <th>Thumbnail</th>
+                  <th>Judul</th>
                   <th>Tanggal Publish</th>
                   <th>Author</th>
                   <th class="text-center" width="150">Action</th>
@@ -57,8 +57,8 @@
                 ?>
                     <tr>
                         <td><?= $no ?></td>
+                        <td><img src="<?= base_url('assets/images/artikel/').$gambar ?>" class="img-thumbnail" width="200px" height="200px"></td>
                         <td><?= $judul ?></td>
-                        <td><img src="<?= base_url('assets/images/artikel/').$gambar ?>" width="200px" height="200px"></td>
                         <td><?= date_format($tanggal, 'jS F Y') ?></td>
                         <td><?= $author ?></td>
                         <td class="text-center">

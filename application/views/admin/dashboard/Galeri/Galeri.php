@@ -60,7 +60,7 @@
                 ?>
                     <tr>
                         <td><?= $no ?></td>
-                        <td><img src="<?= base_url('assets/images/galeri/').$gambar ?>" alt="<?= $judul ?>" width="200" height="200px"></td>
+                        <td><img src="<?= base_url('assets/images/galeri/').$gambar ?>" alt="<?= $judul ?>" class="img-thumbnail" width="200" height="200"></td>
                         <td>
                           <b>Judul &ensp;&nbsp;:</b> <?= $judul ?><br>
                           <b>Author &nbsp;:</b> <?= $author ?><br>

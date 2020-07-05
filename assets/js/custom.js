@@ -51,3 +51,16 @@ const flashData = $('.flash-data').data('flashdata');
           text : "Data Has Been Updated"
       });     
   }
+
+  else if (flashData == "gagal"){
+    Swal.fire ({
+        icon: "error",
+        text : "Your image resolution is too small, make sure your image resolution is 300x600 or greater"
+    });     
+}
+else if (flashData == "fail"){
+  Swal.fire ({
+      icon: "error",
+      text : "Make sure your files are in jpg, png or jpeg format"
+  });     
+}

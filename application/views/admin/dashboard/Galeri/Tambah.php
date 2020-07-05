@@ -26,7 +26,7 @@
                   <img class="img-thumbnail" id="blah" height="200" width="200">
                   <div class="form-group">
                       <label for="imgInp">File</label>
-                      <input type="file" class="form-control" id="imgInp" name="foto">
+                      <input type="file" class="form-control" id="imgInp" name="foto" required>
                   </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
