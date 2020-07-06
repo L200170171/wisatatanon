@@ -21,17 +21,17 @@
                 <form action="<?= base_url("admin/Artikel/insert")?>" method="post" enctype="multipart/form-data">
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Judul Artikel</label>
-                      <input type="text" class="form-control col-lg-5" id="exampleFormControlInput1" name="judul">
+                      <input type="text" class="form-control col-lg-5" id="exampleFormControlInput1" name="judul" required>
                   </div>
                   <div class="form-group">
                   <label for="exampleFormControlInput1">Isi Artikel</label>
                   <textarea class="textarea" placeholder="Place some text here" name="isi" id="summernote"
-                            style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                            style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;" required></textarea>
                   </div>
                   <img class="img-thumbnail" id="blah" height="200" width="300">
                   <div class="form-group">
                       <label for="imgInp">Thumbnail</label>
-                      <input type="file" name="foto" class="form-control col-lg-5" id="imgInp">
+                      <input type="file" name="foto" class="form-control col-lg-5" id="imgInp" required>
                   </div>
                   <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
@@ -72,14 +72,14 @@ $("#imgInp").change(function(e) {
     if ((file = this.files[0])) {
         img = new Image();
         img.onload = function() {
-            if(this.width >= 600 && this.height >= 300 )
+            if(this.width >= 920 && this.height >= 500 )
             {
               readURL(x);
             }
             else{
               Swal.fire ({
                   icon: "error",
-                  text : "Your image resolution is too small, make sure your image resolution is 300x600 or greater"
+                  text : "Your image resolution is too small, make sure your image resolution is 920x500 or greater"
               });
               var myinput = document.getElementById("imgInp");
               myinput.value = myinput.defaultValue;

@@ -30,7 +30,6 @@
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Judul Artikel</label>
                     <input type="text" name="judul" class="form-control" id="exampleFormControlInput1" value="<?= $judul ?>">
-                    <input type="text" class="form-control col-lg-5" id="exampleFormControlInput1" >
                 </div>
                 <div class="form-group">
                 <label for="exampleFormControlInput1">Isi Artikel</label>
@@ -70,7 +69,38 @@
   }
 }
 
-$("#imgInp").change(function() {
-  readURL(this);
+$("#imgInp").change(function(e) {
+    var file, img;
+    var x = this;
+    if ((file = this.files[0])) {
+        img = new Image();
+        img.onload = function() {
+            if(this.width >= 920 && this.height >= 500 )
+            {
+              readURL(x);
+            }
+            else{
+              Swal.fire ({
+                  icon: "error",
+                  text : "Your image resolution is too small, make sure your image resolution is 920x500 or greater"
+              });
+              var myinput = document.getElementById("imgInp");
+              myinput.value = myinput.defaultValue;
+              $('#blah').attr('src', '');
+            }
+        };
+        img.onerror = function() { 
+          Swal.fire ({
+              icon: "error",
+              text : "Make sure your files are in jpg, png or jpeg format"
+          }); 
+            var myinput = document.getElementById("imgInp");
+            myinput.value = myinput.defaultValue;
+        };
+        img.src = _URL.createObjectURL(file);
+
+
+    }
+
 });
 </script>
