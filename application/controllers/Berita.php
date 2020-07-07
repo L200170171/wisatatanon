@@ -28,11 +28,12 @@ class Berita extends CI_Controller
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/footer');
     }
-    public function detail($id=0){
+    public function detail($id){
+        $data['data'] = $this->M_artikel->get_data($id);
         $this->load->view('pengguna/templates/header');
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
-        $this->load->view('pengguna/berita/berita_detail');
+        $this->load->view('pengguna/berita/berita_detail',$data);
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/footer');
     }

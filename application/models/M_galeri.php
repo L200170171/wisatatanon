@@ -2,6 +2,7 @@
 
     class M_galeri extends CI_model{
         function t_galeri(){
+            $this->db->order_by('tanggal_upload', ' DESC');
             $query=$this->db->get("galeri");
             return $query->result_array();
         }

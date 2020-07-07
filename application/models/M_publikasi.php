@@ -2,13 +2,8 @@
 
 class M_publikasi extends CI_model{
     public function cek($id){
-        $cek = $this->db->get_where('publikasi',['ID_testimoni'=>$id])->row_array();
-        if($cek){
-            return TRUE;
-        }
-        else{
-            return FALSE;
-        }
+        $cek = $this->db->get_where('publikasi',['ID_testimoni'=>$id])->num_rows();
+        return $cek;
     }
 
     function sidebar(){

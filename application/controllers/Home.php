@@ -18,6 +18,7 @@ class Home extends CI_Controller
     {
         $data['testi']=$this->publish->t_data();
         $data['galeri']=$this->galeri->highlight();
+        $data['artikel']=$this->artikel->highlight();
         $this->load->view('pengguna/templates/header');
         $this->load->view('pengguna/templates/css');
         $this->load->view('pengguna/templates/navbar');
@@ -75,10 +76,11 @@ class Home extends CI_Controller
     }
 
     public function gallery(){
+        $data['galeri']=$this->galeri->t_galeri();
         $this->load->view('pengguna/templates/header');
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
-        $this->load->view('pengguna/gallery');
+        $this->load->view('pengguna/gallery',$data);
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/footer');
     }
