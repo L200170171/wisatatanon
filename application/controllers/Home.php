@@ -64,14 +64,6 @@ class Home extends CI_Controller
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/footer');
     }
-    // public function detailberita(){
-    //     $this->load->view('pengguna/templates/header');
-    //     $this->load->view('pengguna/templates/css'); 
-    //     $this->load->view("pengguna/templates/navbar");
-    //     $this->load->view('pengguna/berita_detail');
-    //     $this->load->view('pengguna/templates/js');
-    //     $this->load->view('pengguna/templates/footer');
-    // }
 
     public function formtestimoni(){
         $this->load->view('pengguna/templates/header');
@@ -79,17 +71,8 @@ class Home extends CI_Controller
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/form_testimoni');
         $this->load->view('pengguna/templates/js');
-        $this->load->view('pengguna/templates/detailfooter');
+        $this->load->view('pengguna/templates/footer');
     }
-
-    // public function berita(){
-    //     $this->load->view('pengguna/templates/header');
-    //     $this->load->view('pengguna/templates/css'); 
-    //     $this->load->view("pengguna/templates/navbar");
-    //     $this->load->view('pengguna/berita');
-    //     $this->load->view('pengguna/templates/js');
-    //     $this->load->view('pengguna/templates/detailfooter');
-    // }
 
     public function gallery(){
         $this->load->view('pengguna/templates/header');
@@ -97,7 +80,7 @@ class Home extends CI_Controller
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/gallery');
         $this->load->view('pengguna/templates/js');
-        $this->load->view('pengguna/templates/detailfooter');
+        $this->load->view('pengguna/templates/footer');
     }
 
     public function insert_testi(){

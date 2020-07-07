@@ -20,8 +20,8 @@
 
             ?>
           <div class="containerimg">
-           <img src="<?= base_url('assets/images/artikel/').$gambar ?>" class="img-fluid pb-5 rounded mx-auto d-block">
-           <div class="content"><h3><?= $judul ?></h3></div>
+           <img src="<?= base_url('assets/images/artikel/').$gambar ?>" class="img-fluid rounded mx-auto d-block">
+           <div class="content"><h3 style="font-family: 'Quicksand_Bold';"><?= $judul ?></h3></div>
           </div>
           <p class="small"><u> <?=date_format($tanggal, 'jS F Y')?> </u></p>
           <div class="article fade-up">

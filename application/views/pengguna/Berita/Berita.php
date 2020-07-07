@@ -61,3 +61,4 @@
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
+  <?php $this->load->view('pengguna/templates/detailfooter'); ?>

@@ -54,5 +54,3 @@
   </main><!-- End #main -->
 
   <?php $this->load->view('pengguna/templates/detailfooter'); ?>
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

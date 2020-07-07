@@ -200,5 +200,3 @@
     </section><!-- End Profil Section -->
 
     <?php $this->load->view('pengguna/templates/detailfooter'); ?>
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

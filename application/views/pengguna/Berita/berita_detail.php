@@ -28,8 +28,8 @@
       <div class="col-lg-10 col-centered">
         <div class="berita text-justify">
           <div class="containerimg">
-          <img src="<?= base_url() ?>assets/img/logo/logo.png" class="img-fluid pb-5 rounded mx-auto d-block">
-          <div class="content"><h3>Desa Tanon Menggelar Upacara hari jadi yang ke 12</h3></div>
+          <img src="<?= base_url() ?>assets/img/logo/logo.png" class="img-fluid rounded mx-auto d-block">
+          <div class="content"><h3 style="font-family: 'Quicksand_Bold';">Desa Tanon Menggelar Upacara hari jadi yang ke 12</h3></div>
           </div>
           <p class="small"><u>Selasa, 01-01-2020</u></p>
           <div class="article fade-up">
@@ -55,5 +55,3 @@
 </main><!-- End #main -->
 
 <?php $this->load->view('pengguna/templates/detailfooter'); ?>
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

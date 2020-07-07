@@ -1,84 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>
-        Login
-    </title>
-
-    <!-- Custom fonts for this template-->
-    <link href="<?= base_url('assets/'); ?>admin/plugins/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Custom styles for this template-->
-    <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css" rel="stylesheet">
-
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="<?= base_url() ?>assets/admin/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="<?= base_url() ?>assets/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="<?= base_url() ?>assets/admin/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-
-<body class="bg-gradient-primary">
-
-<div class="container">
-
-<!-- Outer Row -->
-<div class="row justify-content-center">
-
-    <div class="col-lg-7">
-
-        <div class="card o-hidden border-0 shadow-lg my-5">
-            <div class="card-body p-0">
-                <!-- Nested Row within Card Body -->
-                <div class="row">
-
-                    <div class="col-lg">
-                        <div class="p-5">
-                            <?= $this->session->flashdata('pesan'); ?>
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Login Page</h1>
-                            </div>
-                            <form class="user" method="post" action="<?= base_url('admin/login/auth')?>">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="username" name="username" aria-describedby="username" placeholder="Enter Username..." <?= set_value('username');?>>
-                                    <?= form_error('username','<small class="text-danger pl-3">','</small>');?>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password" <?= set_value('PW');?>>
-                                    <?= form_error('password','<small class="text-danger pl-3">','</small>');?>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary btn-user btn-block">
-                                    Login
-                                </button>
-
-                            </form>
-                        </div>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a><b>LOGIN</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <?= $this->session->flashdata('pesan'); ?>
+    <div class="card-body login-card-body">
+        <form class="user" method="post" action="<?= base_url('admin/login/auth')?>">
+            <?= form_error('username','<small class="text-danger pl-3">','</small>');?>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control form-control-user" id="username" name="username" aria-describedby="username" placeholder="Enter Username..." <?= set_value('username');?>>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fa fa-user"></span>
                     </div>
                 </div>
             </div>
-        </div>
-
+            <?= form_error('password','<small class="text-danger pl-3">','</small>');?>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password" <?= set_value('PW');?>>
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button type="submit" class="btn btn-primary btn-block">
+                    Login
+                </button>
+            </div>
+        </form>
     </div>
-
+    <!-- /.login-card-body -->
+  </div>
 </div>
+<!-- /.login-box -->
 
-</div>
+<!-- jQuery -->
+<script src="<?= base_url() ?>assets/admin/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="<?= base_url() ?>assets/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="<?= base_url() ?>assets/admin/dist/js/adminlte.min.js"></script>
 
-  <!-- Bootstrap core JavaScript-->
-  <script src="<?= base_url('assets/'); ?>admin/plugins/jquery/jquery.min.js"></script>
-  <script src="<?= base_url('assets/'); ?>admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="<?= base_url('assets/'); ?>admin/plugins/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
-
-  </body>
-
-  </html>
+</body>
+</html>

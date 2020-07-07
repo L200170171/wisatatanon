@@ -120,3 +120,4 @@
         </div>
       </div>
     </section><!-- End Portfolio Section -->
+    <?php $this->load->view('pengguna/templates/detailfooter'); ?>
