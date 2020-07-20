@@ -12,12 +12,10 @@
         <div class="berita text-justify">
           <!-- <h2 class="portfolio-title text-center">Desa Tanon Menggelar Upacara hari jadi yang ke 12</h2> -->
           <?php
-            foreach($data as $i):
-              $judul = $i['judul'];
-              $isi = $i['isi'];
-              $gambar = $i['thumbnail'];
-              $tanggal = date_create($i['tanggal_upload']);
-
+              $judul = $data['judul'];
+              $isi = $data['isi'];
+              $gambar = $data['thumbnail'];
+              $tanggal = date_create($data['tanggal_upload']);
             ?>
           <div class="containerimg">
            <img src="<?= base_url('assets/images/artikel/').$gambar ?>" class="img-fluid rounded mx-auto d-block">
@@ -27,10 +25,9 @@
           <div class="article fade-up">
               <?= $isi ?>
           </div>
-          <?php endforeach ?>
         </div>
       </div>
-
+      
       <div class="col-1">
       </div>
     </div>

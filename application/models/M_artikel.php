@@ -1,7 +1,15 @@
 <?php
     class M_artikel extends CI_model{
         public function t_artikel(){
+            $this->db->order_by('tanggal_upload', ' DESC');
             $query=$this->db->get("artikel");
+            return $query->result_array();
+        }
+
+        public function highlight(){
+            $this->db->order_by('tanggal_upload', ' DESC');
+            $this->db->limit(3);
+            $query = $this->db->get("artikel");
             return $query->result_array();
         }
 
@@ -55,7 +63,7 @@
         public function get_data($id){
             $this->db->where('ID_artikel',$id);
             $query=$this->db->get("artikel");
-            return $query->result_array();
+            return $query->row_array();
         }
 
         public function update($id){
