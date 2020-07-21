@@ -11,6 +11,7 @@
             <div class="card" style='background-image: url("<?= base_url('assets/images/artikel/').$i['thumbnail']?>");' data-aos="fade-up" data-aos-delay="100">
               <div class="card-body">
                 <h5 class="card-title"><a><?= $i['judul']?></a></h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti est cum odio accusamus fuga.</p>
                   <div class="col text-center">
                     <a class="btn btn-sm btn-primary" href="<?= base_url('berita/detail/').$i['ID_artikel']?>">Baca Selengkapnya</a>
                   </div>

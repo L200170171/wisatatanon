@@ -7,7 +7,7 @@
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
-    <section id="berita" class="portfolio-details">
+    <section id="berita" class="more-services">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -28,28 +28,24 @@
         <?php
             $data = $more->get_tabel($key);
             foreach ($data->result() as $row) :
+                $id=$row->ID_artikel;
                 $judul = $row->judul;
                 $isi = $row->isi;
                 $tgl = date_create($row->tanggal_upload);
                 $thumb = $row->thumbnail;
         ?>
             <!-- items -->
-            <div class="col-md-6 d-flex align-items-stretch">
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4 d-flex align-items-center">
-                            <img src="<?= base_url('assets/images/artikel/').$thumb ?>" class="img-fluid">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= $judul ?></h5>
-                                <p class="card-text"><?= $more->more($isi);?></p>
-                                <p class="card-text"><small class="text-muted"><?= date_format($tgl, 'jS F Y') ?></small></p>
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                    <div class="card" style='background-image: url("<?= base_url('assets/images/artikel/').$thumb ?>");'>
+                        <div class="card-body">
+                            <h5 class="card-title"><a><?= $judul?></a></h5>
+                            <p><?= $more->more($isi);?></p>
+                            <div class="col text-center">
+                                <a class="btn btn-sm btn-primary" href="<?= base_url('berita/detail/').$id?>">Baca Selengkapnya</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <?php endforeach?>
         </div>
         <div class="row">
