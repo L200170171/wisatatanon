@@ -12,7 +12,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="<?php if($halaman==="home"){ echo '#hero'; }elseif($halaman==="inner"){ echo base_url(); }?>">Home</a></li>
-          <?php if($halaman==="home"){?>
+          <?php if($halaman==="home"):?>
           <li class="drop-down"><a href="">Profil Kami</a>
             <ul>
               <li><a href="<?php echo (base_url('home/selayangPandang')); ?>">Selayang Pandang</a></li>
@@ -25,7 +25,7 @@
           <li><a href="<?= "#testimoni"?>">Testimony</a></li>
           <li><a href="<?= "#artikel"?>">Artikel</a></li>
           <li><a href="<?= "#contact"?>">Contact</a></li>
-          <?php } ?>
+          <?php endif ?>
         </ul>
       </nav><!-- .nav-menu -->
 
