@@ -85,7 +85,7 @@ class Home extends CI_Controller
     public function gallery(){
         $data['halaman']="inner";
         $data['galeri']=$this->galeri->t_galeri();
-        $this->load->view('pengguna/templates/header');
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/gallery',$data);
