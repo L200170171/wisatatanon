@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 23, 2020 at 03:25 AM
+-- Generation Time: Jul 23, 2020 at 05:06 AM
 -- Server version: 10.1.38-MariaDB
--- PHP Version: 5.6.40
+-- PHP Version: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -42,10 +42,13 @@ CREATE TABLE `artikel` (
 --
 
 INSERT INTO `artikel` (`ID_artikel`, `judul`, `isi`, `tanggal_upload`, `author`, `thumbnail`) VALUES
-(10, 'test', '<p>isi<br></p>', '2020-07-06 17:02:48', 'admin', 'bb449f36c364928128647975010a276c.jpg'),
 (11, 'hafidz lele stealer', '<div class=\"article fade-up\">\r\n              <div id=\"lipsum\">\r\n<p>\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius\r\n gravida magna nec volutpat. Nunc pellentesque interdum nisi id mattis. \r\nPellentesque id lacus metus. Nulla gravida gravida tortor et \r\nsollicitudin. Aenean mattis leo ex, sit amet pulvinar urna volutpat non.\r\n Suspendisse potenti. Sed vel magna nec lectus elementum posuere. Sed \r\nsed gravida lorem. Integer felis velit, hendrerit non orci in, pulvinar \r\nmollis sem. Proin eget urna id velit mattis pretium ut id massa. Sed \r\nposuere sit amet lacus eu aliquet. Maecenas malesuada leo in volutpat \r\ntincidunt.\r\n</p>\r\n<p>\r\nDonec eget tristique magna. Phasellus maximus, ligula vel pretium \r\neuismod, nunc lacus ullamcorper ex, a tincidunt purus urna vitae dui. \r\nPhasellus pellentesque urna vitae nisl dapibus scelerisque. Vivamus \r\nfermentum lobortis nisi, ac malesuada nibh iaculis ut. Mauris a eleifend\r\n magna. In at posuere sem. Aliquam interdum felis nec velit vulputate \r\ndapibus. Vestibulum urna lectus, ullamcorper quis ultricies a, lobortis \r\nin purus. Etiam aliquam ornare dui, vel tincidunt massa aliquam euismod.\r\n Pellentesque egestas erat vitae dolor porta, id dictum ipsum tincidunt.\r\n Cras magna sapien, vestibulum nec massa eu, rhoncus sollicitudin \r\ntellus. Proin orci est, tristique vel justo pretium, cursus varius diam.\r\n Donec in risus nec tortor pharetra sollicitudin quis eu arcu. Mauris \r\nnec fermentum erat.\r\n</p></div>          </div>', '2020-07-06 17:03:15', 'admin', '6f1701d19dd61fc9e8b3b6247f88a95e.jpg'),
 (12, 'judul3', '<div id=\"lipsum\">\r\n<p>\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius\r\n gravida magna nec volutpat. Nunc pellentesque interdum nisi id mattis. \r\nPellentesque id lacus metus. Nulla gravida gravida tortor et \r\nsollicitudin. Aenean mattis leo ex, sit amet pulvinar urna volutpat non.\r\n Suspendisse potenti. Sed vel magna nec lectus elementum posuere. Sed \r\nsed gravida lorem. Integer felis velit, hendrerit non orci in, pulvinar \r\nmollis sem. Proin eget urna id velit mattis pretium ut id massa. Sed \r\nposuere sit amet lacus eu aliquet. Maecenas malesuada leo in volutpat \r\ntincidunt.\r\n</p>\r\n<p>\r\nDonec eget tristique magna. Phasellus maximus, ligula vel pretium \r\neuismod, nunc lacus ullamcorper ex, a tincidunt purus urna vitae dui. \r\nPhasellus pellentesque urna vitae nisl dapibus scelerisque. Vivamus \r\nfermentum lobortis nisi, ac malesuada nibh iaculis ut. Mauris a eleifend\r\n magna. In at posuere sem. Aliquam interdum felis nec velit vulputate \r\ndapibus. Vestibulum urna lectus, ullamcorper quis ultricies a, lobortis \r\nin purus. Etiam aliquam ornare dui, vel tincidunt massa aliquam euismod.\r\n Pellentesque egestas erat vitae dolor porta, id dictum ipsum tincidunt.\r\n Cras magna sapien, vestibulum nec massa eu, rhoncus sollicitudin \r\ntellus. Proin orci est, tristique vel justo pretium, cursus varius diam.\r\n Donec in risus nec tortor pharetra sollicitudin quis eu arcu. Mauris \r\nnec fermentum erat.\r\n</p></div>', '2020-07-06 17:03:57', 'admin', '5d20d6baea80da5c9f42ade54156e6f8.jpg'),
-(13, 'judul2', '<p>isi<br></p>', '2020-07-06 17:15:55', 'admin', '21955c2163fabace50dc1eea954fcc9b.jpg');
+(13, 'judul2', '<p>isi<br></p>', '2020-07-06 17:15:55', 'admin', '21955c2163fabace50dc1eea954fcc9b.jpg'),
+(14, 'asdasd', '<p>isi<br></p>', '2020-07-23 09:47:10', 'admin', '270894c134205207f1b78da6e211a64d.jpg'),
+(15, 'asdasd', '<p>isi<br></p>', '2020-07-23 09:48:35', 'admin', '32d6bdf0391ea6ddb8ac2563caffe508.jpg'),
+(16, 'dssacxzczxcads', '<p>asdasdsadasd isi<br></p>', '2020-07-23 09:48:56', 'admin', 'b986ab3d1a82827dc594cdca9559441d.jpg'),
+(17, 'asdnas,d ,a', '<p>isi<br></p>', '2020-07-23 09:50:49', 'admin', '4ee0ea808f6e0d9f7e6dd181ab79a5f4.png');
 
 -- --------------------------------------------------------
 
@@ -213,7 +216,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `ID_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `ID_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `galeri`
