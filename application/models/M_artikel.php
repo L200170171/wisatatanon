@@ -101,26 +101,12 @@
             $this->db->update('artikel',$data);
         }
 
-        function get_tabel($key = null){
-
-            //konfigurasi pagination
-            $config['base_url'] = site_url('berita'); //site url
-            $this->db->like('judul',$key);
-            $this->db->or_like('isi',$key);
-            $this->db->from('artikel');
-            $config['total_rows'] = $this->db->count_all_results(); //total row
-            $config['per_page'] = 6;  //show record per halaman
-            $config["uri_segment"] = 3;  // uri parameter
-            $choice = $config["total_rows"] / $config["per_page"];
-            $config["num_links"] = floor($choice);
-            $this->pagination->initialize($config);
-            $data = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-            if($key){
-                $this->db->like('judul',$key);
-                $this->db->or_like('isi',$key);
-            }
-            $query = $this->db->get('artikel', $config["per_page"], $data);
-            return $query;
+         public function getAllBerita($limit, $start, $key = null){
+          if($key){
+              $this->db->like('judul',$key);
+              $this->db->or_like('isi',$key);
+          }
+          return $this->db->get('artikel', $limit, $start);
         }
 
         public function more($str){

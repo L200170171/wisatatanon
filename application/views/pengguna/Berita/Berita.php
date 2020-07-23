@@ -26,7 +26,6 @@
         }?>
         <div class="row">
         <?php
-            $data = $more->get_tabel($key);
             foreach ($data->result() as $row) :
                 $id=$row->ID_artikel;
                 $judul = $row->judul;
