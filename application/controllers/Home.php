@@ -20,8 +20,8 @@ class Home extends CI_Controller
         $data['galeri']=$this->galeri->highlight();
         $data['artikel']=$this->artikel->highlight();
         $data['more']=$this->artikel;
-        $data['paket']=$this->paket->t_tampil();
-        $this->load->view('pengguna/templates/header');
+        $data['paket']=$this->paket->t_tampil();$data['halaman']="home";
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css');
         $this->load->view('pengguna/templates/navbar');
         $this->load->view('pengguna/templates/slider');
@@ -31,10 +31,11 @@ class Home extends CI_Controller
         $this->load->view('pengguna/templates/js');
         $this->load->view('pengguna/templates/footer');
         $this->load->view('pengguna/home/popup');
-        
     }
+        
     public function portfolio(){
-        $this->load->view('pengguna/templates/header');
+        $data['halaman']="inner";
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/portfolio_detail');
@@ -42,7 +43,8 @@ class Home extends CI_Controller
         $this->load->view('pengguna/templates/footer');
     }
     public function selayangPandang(){
-        $this->load->view('pengguna/templates/header');
+        $data['halaman']="inner";
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/profil');
@@ -51,7 +53,8 @@ class Home extends CI_Controller
     }
 
     public function layanan(){
-        $this->load->view('pengguna/templates/header');
+        $data['halaman']="inner";
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/layanan');
@@ -60,7 +63,8 @@ class Home extends CI_Controller
     }
 
     public function klien(){
-        $this->load->view('pengguna/templates/header');
+        $data['halaman']="inner";
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/klien');
@@ -69,7 +73,8 @@ class Home extends CI_Controller
     }
 
     public function formtestimoni(){
-        $this->load->view('pengguna/templates/header');
+        $data['halaman']="inner";
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/form_testimoni');
@@ -78,6 +83,7 @@ class Home extends CI_Controller
     }
 
     public function gallery(){
+        $data['halaman']="inner";
         $data['galeri']=$this->galeri->t_galeri();
         $this->load->view('pengguna/templates/header');
         $this->load->view('pengguna/templates/css'); 

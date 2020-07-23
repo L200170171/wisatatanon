@@ -36,6 +36,8 @@ class Berita extends CI_Controller
         $data['pagination'] = $this->pagination->create_links();
 
         $this->load->view('pengguna/templates/header');
+        $data['halaman']="inner";
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/berita/berita',$data);
@@ -44,7 +46,8 @@ class Berita extends CI_Controller
     }
     public function detail($id){
         $data['data'] = $this->M_artikel->get_data($id);
-        $this->load->view('pengguna/templates/header');
+        $data['halaman']="inner";
+        $this->load->view('pengguna/templates/header',$data);
         $this->load->view('pengguna/templates/css'); 
         $this->load->view("pengguna/templates/navbar");
         $this->load->view('pengguna/berita/berita_detail',$data);

@@ -35,7 +35,7 @@
         ?>
             <!-- items -->
                 <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-                    <div class="card" style='background-image: url("<?= base_url('assets/images/artikel/').$thumb ?>");'>
+                    <div class="card" style='background-image: url("<?= base_url('assets/images/artikel/').$thumb ?>"); min-height:392px'>
                         <div class="card-body">
                             <h5 class="card-title"><a><?= $judul?></a></h5>
                             <p><?= $more->more($isi);?></p>
