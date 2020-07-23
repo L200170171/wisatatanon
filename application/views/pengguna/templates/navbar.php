@@ -11,7 +11,8 @@
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li><a href="<?= base_url('home#hero')?>">Home</a></li>
+          <li><a href="<?php if($halaman==="home"){ echo '#hero'; }elseif($halaman==="inner"){ echo base_url(); }?>">Home</a></li>
+          <?php if($halaman==="home"){?>
           <li class="drop-down"><a href="">Profil Kami</a>
             <ul>
               <li><a href="<?php echo (base_url('home/selayangPandang')); ?>">Selayang Pandang</a></li>
@@ -19,28 +20,12 @@
               <li><a href="<?php echo (base_url('home/klien')); ?>">Klien</a></li>
             </ul>
           </li>
-          <li><a href="<?= base_url("home#gallery")?>">Gallery</a></li>
-          <li><a href="<?= base_url("home#paket")?>">Paket Wisata</a></li>
-          <li><a href="<?= base_url("home#testimoni")?>">Testimony</a></li>
-          <li><a href="<?= base_url("home#artikel")?>">Artikel</a></li>
-          <li><a href="<?= base_url("home#contact")?>">Contact</a></li>
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
+          <li><a href="<?= "#gallery"?>">Gallery</a></li>
+          <li><a href="<?= "#paket"?>">Paket Wisata</a></li>
+          <li><a href="<?= "#testimoni"?>">Testimony</a></li>
+          <li><a href="<?= "#artikel"?>">Artikel</a></li>
+          <li><a href="<?= "#contact"?>">Contact</a></li>
+          <?php } ?>
         </ul>
       </nav><!-- .nav-menu -->
 
