@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 06, 2020 at 07:07 PM
+-- Generation Time: Jul 23, 2020 at 03:25 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 5.6.40
 
@@ -89,6 +89,15 @@ CREATE TABLE `paket_wisata` (
   `gambar` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `paket_wisata`
+--
+
+INSERT INTO `paket_wisata` (`ID_paket`, `nama_paket`, `keterangan`, `harga`, `gambar`) VALUES
+(1, 'panas 1', 'ayam, nasi, fruit tea', 20000, '81875a87dd6faef49bd496e4cfca4667.png'),
+(2, 'panas 2', 'ayam 2, nasi, fruit tea ', 25000, '037a6540eb87c8e9271040cdb0945a76.png'),
+(3, 'panas spesial', 'ayam, telur, nasi, fruit tea', 30000, 'f3499e9ce3fef2eca2fc0497b4bd28a6.png');
+
 -- --------------------------------------------------------
 
 --
@@ -109,7 +118,7 @@ INSERT INTO `publikasi` (`ID_publish`, `ID_testimoni`, `tanggal_publish`) VALUES
 (6, 7, '2020-07-04 00:31:39'),
 (7, 8, '2020-07-04 00:31:39'),
 (8, 9, '2020-07-04 00:31:39'),
-(9, 10, '2020-07-04 00:31:39');
+(10, 10, '2020-07-08 01:25:49');
 
 -- --------------------------------------------------------
 
@@ -216,13 +225,13 @@ ALTER TABLE `galeri`
 -- AUTO_INCREMENT for table `paket_wisata`
 --
 ALTER TABLE `paket_wisata`
-  MODIFY `ID_paket` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_paket` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `publikasi`
 --
 ALTER TABLE `publikasi`
-  MODIFY `ID_publish` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ID_publish` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `testimoni`
