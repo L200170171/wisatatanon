@@ -2,6 +2,7 @@
 
     class M_paket extends CI_model{
         function t_tampil(){
+            $this->db->order_by('ID_paket', ' DESC');
             $query=$this->db->get("paket_wisata");
             return $query->result_array();
         }

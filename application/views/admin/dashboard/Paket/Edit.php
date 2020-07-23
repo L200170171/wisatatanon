@@ -30,7 +30,7 @@
                   <input type="hidden" name="fotoa" value="<?= $gambar ?>">
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Nama Paket</label>
-                      <input type="text" nama="nama" class="form-control col-lg-5" id="exampleFormControlInput1" value="<?= $nama ?>">
+                      <input type="text" name="nama" class="form-control col-lg-5" id="exampleFormControlInput1" value="<?= $nama ?>">
                   </div>
                   <div class="form-group">
                       <label for="exampleFormControlFile1">Deskripsi Paket</label>
@@ -38,12 +38,12 @@
                   </div>
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Harga</label>
-                      <input type="text" nama="harga" class="form-control col-lg-5" id="exampleFormControlInput1" value="<?= $harga ?>">
+                      <input type="number" name="harga" class="form-control col-lg-5" id="exampleFormControlInput1" value="<?= $harga ?>">
                   </div>
                   <img src="<?= base_url('assets/images/paket/').$gambar ?>" class="img-thumbnail" id="blah" height="200" width="400">
                   <div class="form-group">
                       <label for="imgInp">Thumbnail</label>
-                      <input type="file" class="form-control col-lg-5" id="imgInp">
+                      <input type="file" name="foto" class="form-control col-lg-5" id="imgInp">
                   </div>
                   <button class="btn btn-primary" type="submit">Submit</button>
                 </form>

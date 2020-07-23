@@ -126,7 +126,7 @@
         public function more($str){
             $string = strip_tags($str);
             if (strlen($string) > 300) {
-                $stringCut = substr($string, 0, 250);
+                $stringCut = substr($string, 0, 100);
                 $endPoint = strrpos($stringCut, ' ');
 
                 $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);

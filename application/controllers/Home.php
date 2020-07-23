@@ -19,6 +19,7 @@ class Home extends CI_Controller
         $data['testi']=$this->publish->t_data();
         $data['galeri']=$this->galeri->highlight();
         $data['artikel']=$this->artikel->highlight();
+        $data['paket']=$this->paket->t_tampil();
         $this->load->view('pengguna/templates/header');
         $this->load->view('pengguna/templates/css');
         $this->load->view('pengguna/templates/navbar');
