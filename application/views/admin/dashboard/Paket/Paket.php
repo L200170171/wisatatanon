@@ -37,26 +37,26 @@
                 <thead>
                 <tr>
                   <th width="30px">No</th>
-                  <th width="300px">Thumbnail</th>
+                  <th width="250px">Thumbnail</th>
                   <th width="300px">Deskripsi</th>
                   <th>Harga</th>
                   <th width="100px">Action</th>
                 </tr>
                 </thead>
-                <?php 
-                  $no = 0;
-                  foreach($data as $i):
-                    $no++;
-                    $id = $i['ID_paket'];
-                    $nama = $i['nama_paket'];
-                    $keterangan = $i['keterangan'];
-                    $harga = number_format($i['harga'],2,',','.');
-                    $gambar = $i['gambar'];                    
-                ?>
                 <tbody>
+                  <?php 
+                    $no = 0;
+                    foreach($data as $i):
+                      $no++;
+                      $id = $i['ID_paket'];
+                      $nama = $i['nama_paket'];
+                      $keterangan = $i['keterangan'];
+                      $harga = number_format($i['harga'],2,',','.');
+                      $gambar = $i['gambar'];                    
+                  ?>
                     <tr>
                         <td><?= $no ?></td>
-                        <td><h3><?= $nama ?></h3><img src="<?=base_url('assets/images/paket/').$gambar;?>" width="300px" hight="200px"></td>
+                        <td><center><h3><?= $nama ?></h3></center><img class="img-thumbnail" src="<?=base_url('assets/images/paket/').$gambar;?>" width="200px" hight="100px"></td>
                         <td><?= $keterangan ?></td>
                         <td><?= 'Rp. '.$harga ?></td>
                         <td>

@@ -63,7 +63,7 @@
         public function get_data($id){
             $this->db->where('ID_artikel',$id);
             $query=$this->db->get("artikel");
-            return $query->row_array();
+            return $query->result_array();
         }
 
         public function update($id){
