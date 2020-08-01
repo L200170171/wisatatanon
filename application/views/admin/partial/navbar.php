@@ -12,7 +12,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link text-dark" data-toggle="dropdown" href="#">
           <i class="fa fa-user"></i>
-          Jeneng User
+          <?= $this->session->nama ?>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <span class="dropdown-item dropdown-header">My Profile</span>
