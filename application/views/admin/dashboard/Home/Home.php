@@ -17,14 +17,13 @@
                     <!-- small box -->
                     <div class="small-box bg-info">
                       <div class="inner">
-                        <h3>150</h3>
+                        <h3><?= count($artikel) ?></h3>
         
                         <p>Jumlah Artikel</p>
                       </div>
                       <div class="icon">
                         <i class="fa fa-newspaper-o"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                   <!-- ./col -->
@@ -32,14 +31,13 @@
                     <!-- small box -->
                     <div class="small-box bg-warning">
                       <div class="inner">
-                        <h3>150</h3>
+                        <h3><?= count($paket) ?></h3>
         
                         <p>Jumlah Paket</p>
                       </div>
                       <div class="icon">
                         <i class="fa fa-list-ul"></i>
                       </div>
-                      <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                   </div>
                   <!-- ./col -->
